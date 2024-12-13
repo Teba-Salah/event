@@ -30,7 +30,7 @@ const EventSlider = () => {
     },
     {
       date: '23 AUG 2023',
-      title: 'PANEL DISCUSSION: THE FUTURE OF SUSTAINABILITY',
+      title: 'THE FUTURE OF SUSTAINABILITY',
       details: [
         { icon: <FaCalendarAlt />, text: 'August 23, 2025' },
         { icon: <FaClock />, text: '1:00 PM - 2:00 PM' },
@@ -72,7 +72,7 @@ const EventSlider = () => {
   return (
     <div className={`unique-slider ${isVisible ? 'slider-visible' : ''}`} ref={sliderRef}>
       <div className="unique-event-info">
-        <h2 className='unique-title'>EVENT</h2>
+        <h2 className='unique-t'>EVENT</h2>
         <div className="unique-event-item">
           <div className="unique-date-circle">{date}</div>
           <div className="unique-event-content">

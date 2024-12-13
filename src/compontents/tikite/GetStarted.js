@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './GetStarted.css'; // Import the CSS file
-import FGHC from '../imges/ak.png';
+import FGHC from '../imges/abkl.png';
 
 const FormPage = () => {
   const [formData, setFormData] = useState({
@@ -8,7 +8,7 @@ const FormPage = () => {
     tickets: '',
     phoneNumber: '',
     email: '',
-    paymentMethod: '',
+    paymentMethod: ''
   });
 
   const handleInputChange = (e) => {
@@ -28,6 +28,7 @@ const FormPage = () => {
     <div className="form-container">
       <div className="form-card">
         <form onSubmit={handleSubmit}>
+
         <label>Event Title</label>
           <input className='inputtikit'
             type="text"
@@ -38,7 +39,7 @@ const FormPage = () => {
             required
           />
            <label>Event Title</label>
-          <input
+          <input className='inputtikit'
             type="number"
             name="tickets"
             placeholder="Number of tickets"
@@ -47,7 +48,7 @@ const FormPage = () => {
             required
           />
            <label>Event Title</label>
-          <input
+          <input input className='inputtikit'
             type="tel"
             name="phoneNumber"
             placeholder="Your number"
@@ -56,7 +57,7 @@ const FormPage = () => {
             required
           />
            <label>Event Title</label>
-          <input
+          <input input className='inputtikit'
             type="email"
             name="email"
             placeholder="Enter your email"
@@ -65,30 +66,29 @@ const FormPage = () => {
             required
           />
           <div className="payment-methods">
-            <p>Choose payment methods</p>
+            <p className='payment_methods'>Choose payment methods</p>
             <label>
-              <input
+              <input input className='inputtikit2'
                 type="radio"
                 name="paymentMethod"
                 value="Credit Card"
                 onChange={handleInputChange}
                 required
               />
-              Credit Card
-            </label>
+              Credit Card </label>
             <label>
-              <input
+              <input input className='inputtikit23'
                 type="radio"
                 name="paymentMethod"
                 value="PayPal"
                 onChange={handleInputChange}
                 required
-              />
-              PayPal
+              /> PayPal
             </label>
           </div>
           <button type="submit" className="submit-button">Save</button>
         </form>
+       
       </div>
     </div>
    

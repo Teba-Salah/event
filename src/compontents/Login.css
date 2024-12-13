@@ -25,24 +25,22 @@
   width: 100%;
   margin: 20px; /* تقليل الهامش لتلائم الشاشات الصغيرة */
 }
-
+.loog{
+  display: flex;
+  justify-content: center;
+  margin-left: -20px;
+}
 .wrapper h1 {
   font-size: 36px;
   text-align: center;
 }
 
-.input-box {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  margin: 20px 0;
-}
+
 
 .input-box input {
   width: 100%;
   height: 100%;
   background: transparent;
-  border: 2px solid #ecf0f1;
   outline: none;
   border-radius: 40px;
   font-size: 16px;
@@ -52,15 +50,6 @@
 
 .input-box input::placeholder {
   color: #ffff;
-}
-
-.input-box .icon {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  color: #ffffff;
 }
 
 .wrapper .remember-forgot {
@@ -168,4 +157,11 @@
     font-size: 20px; /* تقليل حجم الخط */
   }
 }
-
+.icon2{display:flex;
+  margin-top: 0px;
+  position: absolute;
+  right: 20px;
+ top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}

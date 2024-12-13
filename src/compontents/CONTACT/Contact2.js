@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import './Contact2.css';
 
-const ContactForm = () => {
+const UniqueContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     phoneNumber: '',
-    message: ''
+    message: '',
   });
-  
-  const [status, setStatus] = useState(''); // لإظهار حالة الاستمارة
+
+  const [status, setStatus] = useState(''); // Status message for form submission
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,29 +19,29 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // التحقق من أن جميع الحقول قد تم ملؤها
+    // Validate all fields
     const { firstName, lastName, email, phoneNumber, message } = formData;
     if (!firstName || !lastName || !email || !phoneNumber || !message) {
-      setStatus('يرجى ملء جميع الحقول المطلوبة.');
+      setStatus('Please fill out all required fields.');
       return;
     }
 
-    // إرسال البيانات بعد التحقق
+    // Process form submission
     console.log(formData);
-    setStatus('تم إرسال البيانات بنجاح!');
-    // إعادة تعيين الحقول بعد الإرسال
+    setStatus('Data submitted successfully!');
+    // Reset fields after submission
     setFormData({
       firstName: '',
       lastName: '',
       email: '',
       phoneNumber: '',
-      message: ''
+      message: '',
     });
   };
 
   return (
-    <form className="contact-formcs" onSubmit={handleSubmit}>
-      <div className="form-rowc">
+    <form className="unique-contact-form" onSubmit={handleSubmit}>
+      <div className="unique-form-row">
         <input
           type="text"
           name="firstName"
@@ -59,7 +59,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className="form-row">
+      <div className="unique-form-row">
         <input
           type="email"
           name="email"
@@ -77,19 +77,20 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className="form-row">
+      <div className="unique-form-row">
         <textarea
           name="message"
+          className="unique-contact-textarea"
           placeholder="Message/Questions"
           value={formData.message}
           onChange={handleChange}
           required
         ></textarea>
       </div>
-      <button type="submit" className='buttoncs'>Book Now</button>
+      <button type="submit" className="unique-button">Book Now</button>
       {status && <p className="status-message">{status}</p>}
     </form>
   );
 };
 
-export default ContactForm;
+export default UniqueContactForm;

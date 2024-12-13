@@ -6,7 +6,7 @@
     padding: 20px;
     min-height: 80vh;
     position: relative;
-    margin-top: -800px;
+    margin-top: -500px;
 }
 
 .ticket-container {
@@ -43,12 +43,17 @@
   .ticket-card h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    text-align: center;
+    margin-left: 20px;
   }
   
   .ticket-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /* Outline effect */
     
   }
   

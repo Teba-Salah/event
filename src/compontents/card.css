@@ -68,17 +68,17 @@
   
   /* Button styling */
   .card-button1 {
-    background-color: white;
-    color: #333;
+    background-color:#AF621B;
+    color: #ffffff;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 30px;
+ 
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .card-button1:hover {
-    background-color: #f0f0f0;
+    background-color:#935114;
   }
   

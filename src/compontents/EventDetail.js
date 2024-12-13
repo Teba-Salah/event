@@ -97,7 +97,7 @@ const EventDetail = () => {
       <div className="speaker-info">
         <img src={speakerImage} alt="Speaker" className="speaker-image" />
         <div className='speaker-content'>
-        <h3>Mark Johnson</h3>
+        <h3>Mina Johnson</h3>
         <p>
           A leading digital marketing expert with over 15 years of experience in the industry.
           He has worked with some of the biggest brands in the world and has helped numerous

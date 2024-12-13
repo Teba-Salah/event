@@ -1,55 +1,42 @@
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px); 
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); 
-    }
-}
-body{color: #ffffff;}
+*{padding: 0px;
+margin: 0px;
+ }
 .start {
     width:100%;
     height:800px;
-    background: linear-gradient(rgba(10, 0, 48, 0), rgba(10, 0, 48, 0)), url('./imges/home (1).png');
+    background:  url('./imges/home (3).png');
     background-size: cover;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 700px; /* إضافة مسافة من الحافة اليسرى */
+    padding-left: 600px; 
 }
 
 /* رفع الكتابة قليلاً إلى الأعلى */
 
 .hero-content {
-  max-width: 850px;
-  margin-left: 0;
-  margin-top: -30px; /* رفع المحتوى قليلاً للأعلى */
-  animation: fadeInUp 1.5s ease-out; /* تطبيق حركة النص */
-  
+  max-width: 100%;
+  margin-left:10px;
+  margin-top: -40px; /* رفع المحتوى قليلاً للأعلى */
+  animation: fadeInUp 2.5s ease-out; /* تطبيق حركة النص */ 
 }
 
-.hero-content ,h1 {
-    margin-bottom: 20px;
-   margin-left: 130px;
-}
+
 
 h1{
-  font-size: 800px;
+  font-size: 500px;
   margin-left: 80px;
 }
+
 .pl {
-    font-size: em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left:80px ;
     color: #ffffff;
     max-width: 600px;
 }
-h2{  font-size: 1em;
-  margin-bottom: 20px;
+h2{  font-size:0.7em;
+  margin-bottom: 15px;
   margin-left:30px ;
   color: #fff;}
 
@@ -63,8 +50,8 @@ h2{  font-size: 1em;
     text-decoration: none;
     border-bottom: 2px solid;
     animation: fadeInUp 2s ease-out; /* تطبيق الحركة على الزر أيضًا */
-    font-size: 1.1em;
-    margin-bottom: 20px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
     margin-left:80px ;
    
 }
@@ -84,12 +71,12 @@ h2{  font-size: 1em;
 }
 
 .about-content h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size:24px;
+  margin-bottom: 15px;
 }
 
 .about-content p {
-  font-size: 1.2em;
+  font-size:16px;
   margin-bottom: 20px;
 }
 
@@ -139,68 +126,6 @@ h2{  font-size: 1em;
     transform: translateX(0); /* ضبطه على وضعه الطبيعي */
 }
 
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .hero-section,
-    .about-section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .hero-image img,
-    .about-image img {
-      max-width: 100%;
-    }
-  
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .nav-links {
-      display: none;
-    }
-  
-    .auth-buttons {
-      flex-direction: column;
-    }
-  }
-/* Responsive styles */
-@media (max-width: 450px) {
-  .start,
-  .hero-section,
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-    font-size: 12px;
-  }
-  h1 {
-    font-size: 6vw; /* حجم أصغر للشاشات الصغيرة */
-}
-
-
-h2, .hh2 {
-    font-size: 5vw;
-}
-
-  .hero-image img,
-  .about-image img {
-    max-width: 50%;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .auth-buttons {
-    flex-direction: column;
-  }
-}
-
-
 
   .slider {
     position: relative;
@@ -248,22 +173,6 @@ h2, .hh2 {
     background-color:#AF621B; /* لون مميز للنقطة النشطة */
     opacity: 1;
   }
-  
-
-  
-  @media (max-width: 768px) {
-    .slide {
-      height: 300px; /* تصغير الارتفاع للشاشات الأصغر */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .slide {
-      height: 200px; /* تصغير الارتفاع أكثر */
-    }
-  }
-  
-  .carts{background-color:#000000;}
   .productImage{display:inline;}
 
   Link{color: #ffffff;}
@@ -272,35 +181,29 @@ h2, .hh2 {
     color: #ffffff; /* لضبط اللون الأبيض */
     text-decoration: none; /* لإزالة التسطير تحت النص */
 }
-@media (max-width: 768px) {
-  h1 {
-      font-size: 8vw; /* تصغير الخط للأجهزة اللوحية */
-  }
 
-  p, .pl {
-      font-size: 3.5vw;
-      max-width: 500px;
-      max-height:700px;
+@keyframes slideInFromRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100px); /* يبدأ من خارج الشاشة */
   }
-
-  h2, .hh2 {
-      font-size: 4vw;
+  100% {
+      opacity: 1;
+      transform: translateX(0); /* وضعه الطبيعي */
   }
 }
 
+.hero-content {
+  
+  margin-left: 30px;
+  margin-top: -40px; /* رفع المحتوى قليلاً للأعلى */
+  animation: slideInFromRight 2.5s ease-out; /* تطبيق حركة النص من اليمين */
+}
 
-@media (max-width: 480px) {
-  h1 {
-      font-size: 6vw; /* حجم أصغر للشاشات الصغيرة */
-  }
-
-  p, .pl {
-      font-size: 4vw;
-      max-width: 300px;
-      max-height: 400px;
-  }
-
-  h2, .hh2 {
-      font-size: 5vw;
-  }
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+ 
 }

@@ -55,7 +55,7 @@ const EventForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="special-event-form">
-      <h1>Event Form</h1>
+      <h2 className="eventform">Event Form</h2>
 
       <div className="special-form-group">
         <label>Event Title</label>

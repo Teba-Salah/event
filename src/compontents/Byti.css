@@ -4,8 +4,6 @@
     background-color:#192f4e99;
     padding: 20px;
    margin-top: -100px;
-  
-   
    color: #fff;
 }
 
@@ -161,38 +159,6 @@
 
     .event-button {
         padding: 9px 18px;
-        font-size: 1rem;
-    }
-}
-
-/* Responsive for larger devices */
-@media (min-width: 1025px) {
-    .event-title {
-        font-size: 1.5rem;
-    }
-
-    .event-subtitle {
-        font-size: 2rem;
-    }
-
-    .timer-display {
-        gap: 20px;
-    }
-
-    .time-segment {
-        padding: 20px;
-    }
-
-    .time-segment span {
-        font-size: 2rem;
-    }
-
-    .time-segment p {
-        font-size: 1rem;
-    }
-
-    .event-button {
-        padding: 10px 20px;
         font-size: 1rem;
     }
 }

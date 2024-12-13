@@ -1,20 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
+import { FaLightbulb, FaHandsHelping, FaAward } from "react-icons/fa"; // استيراد الأيقونات الجديدة
 import './About.css';
-import fram from "./imges/Vecto4r.png";
-import vector from "./imges/Vecto4r.png";
 import Eventimage from './imges/about (1).png'; 
 import Aboutnm from "./Aboutnum";
 
 const About = () => {
-  const [showSpeakerName, setShowSpeakerName] = useState([false, false, false, false]);
-
-  const handleCardClick = (index) => {
-    const updatedShowNames = [...showSpeakerName];
-    updatedShowNames[index] = !updatedShowNames[index];
-    setShowSpeakerName(updatedShowNames);
-  };
-
   const speakers = [
     { name: "Mark", image: "https://images.squarespace-cdn.com/content/v1/5fffa96b879bf154c30d506d/665435b4-e45d-4b0a-81b4-41b45a98e7a9/DSC07519.jpg?format=1500w" },
     { name: "Jean", image: "https://amyallmandphotography.com/wp-content/uploads/sites/7906/2022/10/Sapphire-Suite-Branding-Session_Csilla-Muscan_Amy-Allmand-Photography_13-scaled.jpg" },
@@ -62,12 +53,7 @@ const About = () => {
       {/* Background Cover */}
       <div className='cover-event'>
         <img src={Eventimage} className='backgrounddd' alt='Event background'></img>
-        
       </div>
-      {/* Banner */}
-      <section className="MainBanner">
-        <div className="BannerText"></div>
-      </section>
 
       {/* Features */}
       <section className="EventFeatures">
@@ -78,11 +64,11 @@ const About = () => {
         <div className="FeaturesRight">
           <div className="FeatureBox">
             <div className="FeatureIcon">
-              <img src={vector} alt="Vector Icon" />
+              <FaLightbulb size={50} color="#ffffff" /> {/* Icon with white color */}
             </div>
             <div className="FeatureContent">
               <h3 className="hh3">Innovation</h3>
-              <p>
+              <p className="pabout">
                 At Gravity, we're committed to staying ahead of the curve with cutting-edge technology 
                 and forward-thinking ideas. We're always pushing boundaries to deliver unique and 
                 unforgettable experiences, constantly looking for new ways to help our clients stand apart.
@@ -93,11 +79,11 @@ const About = () => {
 
           <div className="FeatureBox">
             <div className="FeatureIcon">
-              <img src={fram} alt="Frame Icon" />
+              <FaHandsHelping size={50} color="#ffffff" /> {/* Icon with white color */}
             </div>
             <div className="FeatureContent">
               <h3 className="hh3">Collaboration</h3>
-              <p>
+              <p className="pabout">
                 We believe that collaboration is key to any successful event planning. Our team works 
                 alongside you, ensuring your vision is clearly understood and executed to perfection.
               </p>
@@ -107,11 +93,11 @@ const About = () => {
 
           <div className="FeatureBox">
             <div className="FeatureIcon">
-              <img src={fram} alt="Frame Icon" />
+              <FaAward size={50} color="#ffffff" /> {/* Icon with white color */}
             </div>
             <div className="FeatureContent">
               <h3 className="hh3">Excellence</h3>
-              <p>
+              <p className="pabout">
                 At Gravity, we're dedicated to excellence in everything we do. Attention to detail, 
                 creativity, and precision in execution ensure that every event exceeds expectations.
               </p>
@@ -121,22 +107,22 @@ const About = () => {
       </section>
 
       {/* Statistics */}
-     <Aboutnm/>
+      <Aboutnm/>
+
       {/* Speakers */}
       <section className="EventSpeakers" id="speakerSection">
-      <h2 className="speaker22">Speakers</h2>
-      <div className="SpeakerGrid">
-        {speakers.map((speaker, index) => (
-          <div key={index} className="SpeakerCard">
-            <img src={speaker.image} alt={speaker.name} className="SpeakerImage" />
-            <div className="SpeakerOverlay">
-              <h3 className="SpeakerName">{speaker.name}</h3>
+        <h2 className="speaker22">Speakers</h2>
+        <div className="SpeakerGrid">
+          {speakers.map((speaker, index) => (
+            <div key={index} className="SpeakerCard">
+              <img src={speaker.image} alt={speaker.name} className="SpeakerImage" />
+              <div className="SpeakerOverlay">
+                <h3 className="SpeakerName">{speaker.name}</h3>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
-     
+          ))}
+        </div>
+      </section>
 
       {/* Attendees (Slider) */}
       <section className="EventAttendees">
@@ -153,4 +139,3 @@ const About = () => {
 };
 
 export default About;
-

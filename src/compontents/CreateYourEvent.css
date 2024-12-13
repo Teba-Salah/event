@@ -9,17 +9,23 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   }
   
-  .special-event-form h1{
+  .special-event-form .eventform{
     color: white;
     font-size: 1.8rem;
-    text-align: center;
     margin-bottom: 20px;
   }
+  .eventform{
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  
   
   .special-form-group {
     margin-bottom: 20px; /* Increased margin for more space between inputs */
     position: relative;
-  }z
+  }
   
   .special-form-group label {
     color: #fff;
@@ -42,22 +48,12 @@
     outline: none;
   }
   
-  .special-form-input::placeholder,
-  .special-form-textarea::placeholder {
+  .special-form-input::placeholder {
     color: rgba(255, 255, 255, 0.7);
   }
-  
-  .special-form-textarea {
-    min-height: 100px;
-    resize: none;
-   
+  .special-form-textarea::placeholder{
+    color: rgba(255, 255, 255, 0.7);
   }
-  
-  .special-form-input:focus,
-  .special-form-textarea:focus {
-    border-color: #AF621B;
-  }
-  
   .special-file-upload {
     color: white;
   }
@@ -94,4 +90,5 @@
     }
   }
 input{border-radius: 40px;}  
+
 

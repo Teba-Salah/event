@@ -1,6 +1,6 @@
 const eventData1 = [
     {
-      image: 'https://i.pinimg.com/736x/11/69/9c/11699c4bcce332e760c6aec75bc93d69.jpg',
+      image: 'https://i.pinimg.com/736x/46/e7/49/46e74936ad0765b69dad1c0cf04c5e70.jpg',
       title: 'Mega Destination',
       subtitle: 'Wedding',
     },
@@ -30,22 +30,13 @@ const eventData1 = [
       subtitle: 'Wedding',
     },
     {
-      image: 'https://i.pinimg.com/736x/46/e7/49/46e74936ad0765b69dad1c0cf04c5e70.jpg',
+      image: 'https://i.pinimg.com/736x/95/9c/cb/959ccb2426ad4b2f789acf409dfc674e.jpg',
       title: 'Mega Destination ',
       subtitle: 'Wedding',
     },
+    
     {
-      image: 'https://i.pinimg.com/736x/ec/76/4e/ec764e9bd88764298e05ef2627c4b2a6.jpg',
-      title: 'Mega Destination ',
-      subtitle: 'Wedding',
-    },
-    {
-      image: 'https://i.pinimg.com/736x/2f/5d/53/2f5d532de92d0ebc022cb89115109e6c.jpg',
-      title: 'Mega Destination ',
-      subtitle: 'Wedding',
-    },
-    {
-      image: 'https://i.pinimg.com/736x/46/e7/49/46e74936ad0765b69dad1c0cf04c5e70.jpg',
+      image: 'https://i.pinimg.com/736x/e5/ba/d1/e5bad1c3ef0b93d002b6d182e2da5b0b.jpg',
       title: 'Mega Destination ',
       subtitle: 'Wedding',
     },

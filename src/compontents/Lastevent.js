@@ -33,7 +33,7 @@ function Lastevent() {
 
   return (
     <div className='last'>
-      <div className="title">Laste Events</div>
+      <h2 className="Laste_Events">Laste Events</h2>
       <Slider {...settings}>
         {videos.map((video, idx) => (
           <div

@@ -33,16 +33,13 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   margin: 50px;
   height: 600px;
-  margin-top: 230px;
+  margin-top: 130px;
   max-width: 950px;
 }
 
 /* Styling for the inputs */
-input[type="text"],
-input[type="number"],
-input[type="tel"],
-input[type="email"] {
-  width: 100%;
+.inputtikit
+{width:800px;
   padding: 10px;
   margin: 10px 0;
   border:2px solid;
@@ -50,23 +47,37 @@ input[type="email"] {
   background-color: transparent;
   color: white;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
-
+.inputtikit2
+{
+  padding: 10px;
+  margin: 10px 0;
+  border:2px solid;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+ 
+}
 input[type="text"]::placeholder,
 input[type="number"]::placeholder,
 input[type="tel"]::placeholder,
-input[type="email"]::placeholder {
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
   color: #ddd;
 }
-
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="tel"]:focus,
-input[type="email"]:focus {
-  outline: none;
-  background: rgba(255, 255, 255, 0.3);
+input[type="email"]:focus,
+input[type="password"]:focus {
+  color: #ffffff;
 }
 
+input[type="password"]
+  
 /* Payment methods section */
 .payment-methods {
   margin-top: 20px;
@@ -74,23 +85,26 @@ input[type="email"]:focus {
 
 .payment-methods p {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 1rem;
 }
 
 .payment-methods label {
-  display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: white;
+  display: block;
+  margin-left: 25px;
+  
 }
 
 .payment-methods input {
-  margin-right: 10px;
+  margin-left: 0px;
+ 
 }
-
+.payment_methods{margin-left: 0px;}
 /* Styling for the submit button */
 .submit-button {
-  width: 40%;
+  width: 30%;
   padding: 10px;
   background-color: #AF621B;
   color: white;
@@ -103,5 +117,5 @@ input[type="email"]:focus {
 }
 
 .submit-button:hover {
-  background-color:  #c17024;
+  background-color:  #af6520;
 }

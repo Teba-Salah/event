@@ -1,8 +1,8 @@
 import React from 'react';
 import BuyTICKETS from './BuyTICKETS';
 import './Ti.css'; // تأكد من استيراد ملف CSS
- import FGHC from '../imges/abkl.png';
-;
+import FGHC from '../imges/abkl.png';
+import { Link } from 'react-router-dom';
 
 const Ti = () => {
   return (
@@ -19,7 +19,11 @@ const Ti = () => {
         <p>Sign up for Eventify today and start planning your next success!</p>
       </div>
       <div className="event-signup">
-        <button>JOIN NOW</button>
+      
+        <button className='ff'> <Link to="/login" className="singgg">JOIN NOW</Link></button>
+        
+      
+        
       </div>
     </div>
       

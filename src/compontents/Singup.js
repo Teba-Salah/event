@@ -51,7 +51,7 @@ const Signup = () => {
     <div className='body'>
       <div className='wrapper'>
         <form onSubmit={handleSubmit}>
-          <h1>Sign in</h1>
+          <h1 className='loog'>Sign in</h1>
           <div className="input-box">
             <input 
               type="text" 
@@ -80,7 +80,7 @@ const Signup = () => {
               onChange={handlePasswordChange} 
               required 
             />
-            {!isPasswordTyping && <FaLock className='icon' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
+            {!isPasswordTyping && <FaLock className='icon22' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
           </div>
           {error && <h5 className='error-message'>{error}</h5>}
           <button type="submit">Sign in</button>

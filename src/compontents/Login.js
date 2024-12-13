@@ -43,7 +43,7 @@ const Login = () => {
     <div className='body'>
       <div className='wrapper'>
         <form action="">
-          <h1>Login</h1>
+          <h1 className='loog'>Login</h1>
           <div className="input-box">
             <input 
               type="text" 
@@ -62,7 +62,7 @@ const Login = () => {
               onChange={handlePasswordChange}  
               required 
             />
-            {!isPasswordTyping && <FaLock className='icon' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
+            {!isPasswordTyping && <FaLock className='icon2' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
           </div>
           {error && <h5 className='error-message'>{error}</h5>}
           <div className="remember-forgot">
@@ -71,12 +71,13 @@ const Login = () => {
           </div>
           <button type="submit">Login</button>
           <div className="register-linkss">
-            <p>Don't have an account? <Link to="/Signup" className='singgg'>Sign in</Link></p>
+            <p>Don't have an account?  <Link to="/Signup" className='singgg'> Sign in</Link></p>
           </div>
         </form>
       </div>
     </div>
   );
-};
+};git add اسم_الملف
+
 
 export default Login;

@@ -1,10 +1,7 @@
-
-
 .tt{display: flex;
-height: 1330px;
+height: 1130px;
 padding: 20px;
 margin-top: 40px;}
-
 
   .sidebarrr {
     width: 25%;
@@ -18,6 +15,8 @@ margin-top: 40px;}
     line-height: 30%;
   }
 
+
+
   .categoriesblogs{
     line-height: 0;
     line-height: 25%;
@@ -26,56 +25,45 @@ margin-top: 40px;}
   .latest-postss {
     margin-top: 1px;
     color: #ffff;
+    list-style-type: none;
+    padding: 0;
+   
   }
   
   .latest-postss  .h2blogs {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffff;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   
-  .latest-postss   {
-    list-style-type: none;
-    padding: 0;
-    
-    
-  }
-  
-  .post-itemblogs {
-    margin-bottom: 20px;
-    margin-left: 35px;
-    font-size: 16px;
-  
-  }
-  
   .post-dateblogs {
-    font-size: 16px;
+    font-size: 14px;
     color:  #c0c0c0;
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 0px;
-    margin-left: 20px;
+    margin-left: 50px;
     
   }
   
   .post-titleblogs {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 0px;
     color:#c0c0c0;  
     padding-bottom: 0px;
-    margin-left: 20px;
+    margin-left: 50px;
   }
   
   .post-authorblogs {
-    font-size: 16px;
+    font-size: 14px;
     color:#c0c0c0;
     font-weight: bold;
     padding-top: 0px;
     padding-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 45px;
 
   }
   
@@ -83,7 +71,7 @@ margin-top: 40px;}
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .tagblogs {
@@ -91,13 +79,13 @@ margin-top: 40px;}
     padding: 5px 10px;
     border-radius:10px;
     color: white;
-    margin-left: 20px;
-    font-size: 18px;
+    margin-left: 0px;
+    font-size: 16px;
   }
   
   .contentblogs {
-    width: 45%;
-    margin-top: 150px;
+    width: 15%;
+    margin-top: 100px;
   }
   
   .post-gridblogs {
@@ -123,75 +111,32 @@ margin-top: 40px;}
 
 .h33blo{
     margin-left:40px;
-    font-size: 1.6rem;
+    font-size: 1rem;
     padding-right: 60px;
+
+}
+.post-titleblogs, .post-authorblogs, .post-dateblogs {
+  margin-left: 0; /* إزالة الهوامش الجانبية */
+  text-align: left; /* محاذاة النصوص إلى الوسط */
+  padding: 5px 0; /* تحسين المسافات بين النصوص */
+  line-height: 1.5; /* تحسين التباعد بين الأسطر */
 }
 
 .ppblo{
     margin-left:40px;
-    font-size: 1rem;
+    font-size:0.7rem;
     padding-right: 60px;
+    text-align: left; 
+    margin-bottom: 10px;
+    
 }
 .pblogs{
-    margin-left: 22px;
+    margin-left:0px;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 1200px) {
-    .contentblogs {
-        width: 100%; /* Make content take full width on smaller screens */
-    }
-    
-    .sidebarrr {
-        width: 100%; /* Sidebar takes full width on smaller screens */
-        margin-bottom: 20px; /* Add margin for spacing */
-    }
 
-    .post-gridblogs {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
-    }
-}
 
-@media (max-width: 768px) {
-    .tt {
-        flex-direction: column; /* Stack sidebar and content vertically */
-    }
 
-    .sidebarrr {
-        width: 100%;
-    }
-
-    .post-gridblogs {
-        grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
-    }
-
-    .h33blo, .ppblo, .pblogs {
-        margin-left: 10px;
-        padding-right: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .tt {
-        flex-direction: column;
-    }
-
-    .postblogs {
-        margin-top: 5px;
-    }
-
-    .h33blo, .ppblo {
-        font-size: 1.2rem;
-    }
-    
-    .post-gridblogs {
-        grid-template-columns: 1fr; /* Single column for very small screens */
-    }
-
-    .postblogs .imgblogs {
-        height: 150px; /* Reduce image height for smaller screens */
-    }
-}
 
 .post-gridblogs {
   display: grid;
@@ -230,78 +175,6 @@ margin-top: 40px;}
   transform: scale(0.95); /* تصغير الصورة عند الضغط */
 }
 
-/* إضافة تأثير الاهتزاز */
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 1200px) {
-  .contentblogs {
-    width: 100%; /* Make content take full width on smaller screens */
-  }
-
-  .sidebarrr {
-    width: 100%; /* Sidebar takes full width on smaller screens */
-    margin-bottom: 20px; /* Add margin for spacing */
-  }
-
-  .post-gridblogs {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .tt {
-    flex-direction: column; /* Stack sidebar and content vertically */
-  }
-
-  .sidebarrr {
-    width: 100%;
-  }
-
-  .post-gridblogs {
-    grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
-  }
-
-  .h33blo, .ppblo, .pblogs {
-    margin-left: 10px;
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .tt {
-    flex-direction: column;
-  }
-
-  .postblogs {
-    margin-top: 5px;
-  }
-
-  .h33blo, .ppblo {
-    font-size: 1.2rem;
-  }
-  
-  .post-gridblogs {
-    grid-template-columns: 1fr; /* Single column for very small screens */
-  }
-
-  .postblogs .imgblogs {
-    height: 150px; /* Reduce image height for smaller screens */
-  }
-}
 
 
 .pagination {
@@ -310,6 +183,7 @@ margin-top: 40px;}
   align-items: center;
   margin-top: 20px;
   gap: 10px;
+  margin-left:-50px;
 }
 
  .pagination-number {
@@ -343,16 +217,101 @@ margin-top: 40px;}
   opacity: 0.5;
   cursor: not-allowed;
 }
-.h2blogshh{font-size: 25px;
+.h2blogshh{font-size: 20px;
   margin-top: 10px;
   margin-bottom: 30px;
-  margin-left: 20px}
+  margin-left:0px}
 
-.h2blogs{font-size: 30px;
+.h2blogs{font-size:18px;
 margin-top: 30px;
 margin-bottom: -15px;
-margin-left: 20px;}
+margin-left: 0px;}
 
-.pop{font-size: 25px;
-margin-left: 20px;
+.pop{font-size:16px;
+margin-left: 0px;
 margin-top: 30px;}
+
+
+.pblogs.active {
+  color:#AF621B; /* اللون الذي تريده عند النقر */
+  font-weight: bold;
+}
+.pblogs{font-size: 14px;}
+
+
+/* تعديل الأبعاد العامة للمحتوى */
+.contentblogs {
+  width: 30%; /* زيادة عرض المحتوى لتنسيق أفضل */
+  margin-top: 20px; /* تقليل المسافة العلوية */
+}
+
+/* تعديل الشبكة الخاصة بالمنشورات */
+.post-gridblogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* جعل الأعمدة بحجم متساوي */
+  gap: 10px; /* زيادة المسافة بين العناصر */
+}
+
+/* تنسيق البطاقة الخاصة بالمنشورات */
+.postblogs {
+  color: aliceblue;
+  background-color: transparent;
+  padding: 20px; /* زيادة المسافة داخل البطاقة */
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* إضافة تأثير التكبير */
+}
+
+/* تنسيق الصورة داخل البطاقة */
+.postblogs .imgblogs {
+  border-radius: 12px;
+  height: 150px; /* زيادة ارتفاع الصورة لتتناسب مع محتوى البطاقة */
+  width: 80%; /* جعل الصورة تأخذ عرض البطاقة بالكامل */
+  object-fit: cover; /* لضمان ملاءمة الصورة داخل البطاقة */
+}
+
+/* تنسيق النصوص داخل البطاقة */
+.post-titleblogs,
+.post-authorblogs,
+.post-dateblogs {
+  margin-left: 0; /* إزالة الهوامش الجانبية */
+  padding-top:3px; /* تحسين المسافات بين النصوص */
+  padding-bottom: 5px;
+}
+
+/* تحسين التنسيق عند التحويم */
+.postblogs:hover {
+  transform: scale(1.05); /* تكبير البطاقة عند التحويم */
+}
+
+/* تحسين الباجينايشن */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* زيادة المسافة بين الأزرار */
+}
+
+.pagination-number {
+  background: none;
+  border: 1px solid #AF621B;
+  color: #AF621B;
+  border-radius: 50%;
+  width: 40px; /* زيادة حجم الأزرار */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-number.active {
+  background-color: #AF621B;
+  color: #fff;
+}
+
+.post-item{font-size: 14px;}
+.pagination-number:hover{color: #fff;}
+.pagination-button:hover{color: #AF621B;
+background-color: #af621b00;}
+
+

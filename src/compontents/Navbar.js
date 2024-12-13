@@ -43,15 +43,14 @@ const Navbar = () => {
         <div className="close-menu" onClick={toggleMenu}>
           <FaTimes />
         </div>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
+        <a href="#home"> <Link to="/Hhome">HOME</Link></a>
+        <a href="#about"><Link to="/About"> ABOUT </Link></a>
         <a href="#create">CREATE YOUR EVENT</a>
-        <a href="#events">EVENTS</a>
+        <a href="#events"><Link to="/Event">EVENTS</Link></a>
         <a href="#tickets">TICKETS</a>
         <a href="#blogs">BLOGS</a>
         <a href="#contact">CONTACT</a>
         <button className="sign-inn"><Link to="/login" className="singgg">Login</Link></button>
-       
       </div>
     </nav>
   );
