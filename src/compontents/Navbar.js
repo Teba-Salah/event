@@ -45,11 +45,11 @@ const Navbar = () => {
         </div>
         <a href="#home"> <Link to="/Hhome">HOME</Link></a>
         <a href="#about"><Link to="/About"> ABOUT </Link></a>
-        <a href="#create">CREATE YOUR EVENT</a>
+        <a href="#create"><Link to="/CreateYourEvent">Create Your Event</Link></a>
         <a href="#events"><Link to="/Event">EVENTS</Link></a>
-        <a href="#tickets">TICKETS</a>
-        <a href="#blogs">BLOGS</a>
-        <a href="#contact">CONTACT</a>
+        <li><a href="#tickets"><Link to="/Ti">TICKETS</Link></a></li>
+        <a href="#blogs"><Link to="/BBlogs">BLOGS</Link></a>
+        <a href="#contact"><Link to="/Contact">Contact</Link></a>
         <button className="sign-inn"><Link to="/login" className="singgg">Login</Link></button>
       </div>
     </nav>
