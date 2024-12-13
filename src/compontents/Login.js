@@ -77,7 +77,7 @@ const Login = () => {
       </div>
     </div>
   );
-};git add اسم_الملف
+};
 
 
 export default Login;
