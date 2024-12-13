@@ -8,7 +8,7 @@
   .background-image {
     width: 100%;
     height: 50%;
-    object-fit: cover; /* لجعل الصورة تغطي كامل المساحة */
+    object-fit: cover; 
   }
   
   .content {
@@ -16,21 +16,21 @@
     top: 70%;
     left: 50%;
   height:300px;
-    transform: translate(-50%, -50%); /* لمركز المحتوى */
-    text-align: center; /* لتوسيط النص */
-    color: white; /* لون النص */
-    z-index: 1; /* تأكد أن المحتوى فوق الصورة */
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+    z-index: 1; 
   }
 
 .event-banner {
-  background-image: url('../imges/view eventes.png'); /* Set the background image */
-  background-size: cover; /* Ensures the image covers the entire banner */
-  background-position: center; /* Centers the background image */
+  background-image: url('../imges/view eventes.png'); 
+  background-size: cover; 
+  background-position: center; 
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
   padding: 50px 20px;
   min-height: 50vh;
@@ -59,7 +59,7 @@
 .event-signup {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Ensures the input and button are centered */
+  align-items: center; 
   margin-top: 20px;
 }
 
@@ -71,7 +71,7 @@
   max-width: 90%;
   border: none;
   border-radius: 5px;
-  text-align: center; /* Centers the text inside the input */
+  text-align: center; 
 }
 
 .event-signup button {
@@ -92,8 +92,7 @@
 label{color: #ffffff;}
 
 input:focus, textarea:focus {
-  outline: none; /* إزالة الإطار الافتراضي */
-  border: 2px solid #AF621B; /* تحديد لون الحدود أثناء التركيز */
-  box-shadow: 0 0 5px #bd6b1f; /* إضافة تأثير الظل */
-}
+  outline: none; 
+  border: 2px solid #AF621B; 
+  box-shadow: 0 0 5px #bd6b1f; }
 .ff{height: 40px;}

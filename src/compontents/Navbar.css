@@ -90,7 +90,7 @@ button {
   }
 }
 
-/* Mobile Menu styling */
+
 .mobile-menu {
   display: none;
   position: fixed;
@@ -126,7 +126,7 @@ button {
 
 .mobile-menu a:active,
 .mobile-menu a:focus {
-  color:#AF621B; /* Change color on click */
+  color:#AF621B;
 }
 
 .mobile-menu .sign-inn,

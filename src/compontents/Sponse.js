@@ -8,7 +8,7 @@ const SponsorIcons = () => {
 
   const handleClick = (index) => {
     setActive(index);
-    setTimeout(() => setActive(null), 500); // Reset animation after 0.5s
+    setTimeout(() => setActive(null), 500); 
   };
 
   const sponsors = [

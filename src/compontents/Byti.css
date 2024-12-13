@@ -29,7 +29,7 @@
 .event-details {
     color: #ffffff;
     display: inline;
-    margin: 70px;
+    margin: 100px;
     text-align: center;
 }
 
@@ -83,10 +83,13 @@
     background-color: #AF621B;
     color: #fff;
     border-radius: 30px;
-    width: 200px;
+    width: 180px;
     text-align: center;
+    margin-left: -19px;
 }
-
+.event-ticket-btn:hover {
+    background-color: #894b12;
+}
 .event-button:hover {
     opacity: 0.8;
 }

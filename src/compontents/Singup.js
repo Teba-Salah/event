@@ -9,23 +9,23 @@ const Signup = () => {
   const [email, SetEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setEerror] = useState('');
-  const [isUsernameTyping, setIsUsernameTyping] = useState(false); // حالة لحقول الإدخال
+  const [isUsernameTyping, setIsUsernameTyping] = useState(false);
   const [isEmailTyping, setIsEmailTyping] = useState(false);
   const [isPasswordTyping, setIsPasswordTyping] = useState(false);
 
   const handleUsernameChange = (e) => {
     SetUsername(e.target.value);
-    setIsUsernameTyping(e.target.value.length > 0); // تحديث الحالة عند الكتابة
+    setIsUsernameTyping(e.target.value.length > 0); 
   }
 
   const handleEmailChange = (e) => {
     SetEmail(e.target.value);
-    setIsEmailTyping(e.target.value.length > 0); // تحديث الحالة عند الكتابة
+    setIsEmailTyping(e.target.value.length > 0); 
   }
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-    setIsPasswordTyping(e.target.value.length > 0); // تحديث الحالة عند الكتابة
+    setIsPasswordTyping(e.target.value.length > 0); 
   }
 
   const handleSubmit = async (event) => {
@@ -60,7 +60,7 @@ const Signup = () => {
               onChange={handleUsernameChange} 
               required 
             />
-            {!isUsernameTyping && <FaUserAlt className='icon' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
+            {!isUsernameTyping && <FaUserAlt className='icon' />} 
           </div>
           <div className="input-box">
             <input 
@@ -70,7 +70,7 @@ const Signup = () => {
               onChange={handleEmailChange} 
               required 
             />
-            {!isEmailTyping && <MdOutlineMail className='icon' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
+            {!isEmailTyping && <MdOutlineMail className='icon' />} 
           </div>
           <div className="input-box">
             <input 
@@ -80,12 +80,12 @@ const Signup = () => {
               onChange={handlePasswordChange} 
               required 
             />
-            {!isPasswordTyping && <FaLock className='icon22' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
+            {!isPasswordTyping && <FaLock className='icon22' />}
           </div>
           {error && <h5 className='error-message'>{error}</h5>}
           <button type="submit">Sign in</button>
           <div className="register-link">
-            {/* يمكنك إضافة رابط للتسجيل هنا إذا لزم الأمر */}
+            
           </div>
         </form>
       </div>

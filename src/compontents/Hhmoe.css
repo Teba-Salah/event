@@ -13,13 +13,12 @@ margin: 0px;
     padding-left: 600px; 
 }
 
-/* رفع الكتابة قليلاً إلى الأعلى */
 
 .hero-content {
   max-width: 100%;
   margin-left:10px;
-  margin-top: -40px; /* رفع المحتوى قليلاً للأعلى */
-  animation: fadeInUp 2.5s ease-out; /* تطبيق حركة النص */ 
+  margin-top: -40px; 
+  animation: fadeInUp 2.5s ease-out;  
 }
 
 
@@ -67,8 +66,7 @@ h2{  font-size:0.7em;
  
 }
 .about-section {
-  padding: 30px; /* تقليل الحشوة */
-}
+  padding: 30px; }
 
 .about-content h2 {
   font-size:24px;
@@ -82,8 +80,8 @@ h2{  font-size:0.7em;
 
 .about-content h2,
 .about-content p {
-    margin-top: 40px; /* تقليل المسافة العليا */
-    margin-bottom: 30px; /* تقليل المسافة السفلية */
+    margin-top: 40px; 
+    margin-bottom: 30px; 
 }
 
 
@@ -98,9 +96,9 @@ h2{  font-size:0.7em;
   margin-left: 50px;
   border-radius: 30px;
 }
-
+.get-started:hover{background-color: #8d4b0e;}
 .about-image {
-  transition: opacity 1s, transform 1s; /* لتأثير الانتقال */
+  transition: opacity 1s, transform 1s; 
 }
 
 .about-image img {
@@ -111,19 +109,19 @@ h2{  font-size:0.7em;
 
 .about-content,
 .about-image {
-    opacity: 0; /* جعل العناصر مخفية في البداية */
-    transition: opacity 1s, transform 1s; /* انتقال سلس */
+    opacity: 0; 
+    transition: opacity 1s, transform 1s; 
 }
 
-/* CSS للتأثير عند الظهور */
+
 .about-content.appear {
-    opacity: 1; /* جعل العنصر مرئي */
-    transform: translateX(0); /* ضبطه على وضعه الطبيعي */
+    opacity: 1; 
+    transform: translateX(0); 
 }
 
 .about-image.appear {
-    opacity: 1; /* جعل العنصر مرئي */
-    transform: translateX(0); /* ضبطه على وضعه الطبيعي */
+    opacity: 1; 
+    transform: translateX(0); 
 }
 
 
@@ -170,7 +168,7 @@ h2{  font-size:0.7em;
     opacity: 0.5;
   }
   .dot.active {
-    background-color:#AF621B; /* لون مميز للنقطة النشطة */
+    background-color:#AF621B; 
     opacity: 1;
   }
   .productImage{display:inline;}
@@ -178,26 +176,26 @@ h2{  font-size:0.7em;
   Link{color: #ffffff;}
 
   .link-text {
-    color: #ffffff; /* لضبط اللون الأبيض */
-    text-decoration: none; /* لإزالة التسطير تحت النص */
+    color: #ffffff;
+    text-decoration: none; 
 }
 
 @keyframes slideInFromRight {
   0% {
       opacity: 0;
-      transform: translateX(100px); /* يبدأ من خارج الشاشة */
+      transform: translateX(100px); 
   }
   100% {
       opacity: 1;
-      transform: translateX(0); /* وضعه الطبيعي */
+      transform: translateX(0); 
   }
 }
 
 .hero-content {
   
   margin-left: 70px;
-  margin-top: -40px; /* رفع المحتوى قليلاً للأعلى */
-  animation: slideInFromRight 2.5s ease-out; /* تطبيق حركة النص من اليمين */
+  margin-top: -40px; 
+  animation: slideInFromRight 2.5s ease-out; 
 }
 
 body, html {

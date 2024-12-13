@@ -1,4 +1,4 @@
-/* Sponse.css */
+
 
 .sponsors-container {
   display: flex;
@@ -9,7 +9,7 @@
   margin-bottom: 200px;
 }
 
-/* الشبكة الرئيسية للأيقونات */
+
 .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -38,7 +38,7 @@
 }
 
 .sponsor-icon:hover {
-  color: #AF621B; /* لون عند التحويم */
+  color: #AF621B; 
 }
 
 .sponsor-icon.active {

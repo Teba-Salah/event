@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import './Navbar.css'; // لاستيراد ملف CSS
+import './Navbar.css'; 
 import { Link } from 'react-router-dom';
 
 

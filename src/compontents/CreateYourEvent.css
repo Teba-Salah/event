@@ -1,9 +1,8 @@
-/* CreateYourEvent.css */
+
 .special-event-form {
-    width: 90%; /* Make it responsive */
-    max-width: 1000px; /* Limit the width for large screens */
-    margin: 50px auto; /* Center the form with margin and create space above */
-    padding: 40px; /* Add padding around the form content */
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 50px auto; 
     background: linear-gradient(220deg, #2c3e50, #597f98, #0a1422);
     border-radius: 50px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -23,7 +22,7 @@
   
   
   .special-form-group {
-    margin-bottom: 20px; /* Increased margin for more space between inputs */
+    margin-bottom: 20px; 
     position: relative;
   }
   
@@ -31,7 +30,7 @@
     color: #fff;
     font-size: 0.9rem;
     display: block;
-    margin-bottom: 8px; /* Slight increase in space below the label */
+    margin-bottom: 8px; 
     font-weight: bold;
   }
   

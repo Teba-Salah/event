@@ -51,10 +51,10 @@ const Blogs = () => {
     'All', 'Innovation and Technology', 'Leadership and Management', 'Entrepreneurship and Startups' ,'Business Strategy and Growth','Workforce and Management'
   ];
 
-  // ترتيب المنشورات حسب التاريخ (تنازلي) بعد الفلترة
+  
   const sortedAndFilteredPosts = [...posts]
-    .filter(post => selectedCategory === "All" || post.category === selectedCategory) // فلترة المنشورات
-    .sort((a, b) => new Date(b.date) - new Date(a.date)); // ترتيب المنشورات حسب التاريخ (تنازلي)
+    .filter(post => selectedCategory === "All" || post.category === selectedCategory) 
+    .sort((a, b) => new Date(b.date) - new Date(a.date)); 
 
   const totalPages = Math.ceil(sortedAndFilteredPosts.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;
@@ -79,7 +79,7 @@ const Blogs = () => {
                 className={`pblogs ${selectedCategory === category ? 'active' : ''}`}
                 onClick={() => {
                   setSelectedCategory(category);
-                  setCurrentPage(1); // إعادة الصفحة للأولى عند تغيير التصنيف
+                  setCurrentPage(1); 
                 }}
                 style={{ cursor: 'pointer' }}
               >

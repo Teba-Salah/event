@@ -116,10 +116,10 @@ margin-top: 40px;}
 
 }
 .post-titleblogs, .post-authorblogs, .post-dateblogs {
-  margin-left: 0; /* إزالة الهوامش الجانبية */
-  text-align: left; /* محاذاة النصوص إلى الوسط */
-  padding: 5px 0; /* تحسين المسافات بين النصوص */
-  line-height: 1.5; /* تحسين التباعد بين الأسطر */
+  margin-left: 0;
+  text-align: left; 
+  padding: 5px 0; 
+  line-height: 1.5; 
 }
 
 .ppblo{
@@ -140,8 +140,8 @@ margin-top: 40px;}
 
 .post-gridblogs {
   display: grid;
-  grid-template-columns: repeat(3, 0.6fr); /* تصغير حجم البطاقات */
-  gap: 10px; /* تقليل المسافة بين البطاقات */
+  grid-template-columns: repeat(3, 0.6fr); 
+  gap: 10px; 
   transition: transform 0.3s;
 }
 
@@ -161,19 +161,18 @@ margin-top: 40px;}
 }
 
 .postblogs:active {
-  animation: shake 0.2s linear; /* اهتزاز البطاقة عند الضغط */
+  animation: shake 0.2s linear; 
 }
 
 .postblogs .imgblogs {
   border-radius: 8px;
   height: 180px;
   width: 300px;
-  transition: transform 0.3s ease; /* إضافة تأثير التكبير */
+  transition: transform 0.3s ease; 
 }
 
 .postblogs:active .imgblogs {
-  transform: scale(0.95); /* تصغير الصورة عند الضغط */
-}
+  transform: scale(0.95); }
 
 
 
@@ -233,63 +232,60 @@ margin-top: 30px;}
 
 
 .pblogs.active {
-  color:#AF621B; /* اللون الذي تريده عند النقر */
+  color:#AF621B; 
   font-weight: bold;
 }
 .pblogs{font-size: 14px;}
 
 
-/* تعديل الأبعاد العامة للمحتوى */
 .contentblogs {
-  width: 30%; /* زيادة عرض المحتوى لتنسيق أفضل */
-  margin-top: 20px; /* تقليل المسافة العلوية */
+  width: 30%; 
+  margin-top: 20px; 
 }
 
-/* تعديل الشبكة الخاصة بالمنشورات */
+
 .post-gridblogs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* جعل الأعمدة بحجم متساوي */
-  gap: 10px; /* زيادة المسافة بين العناصر */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
 }
 
-/* تنسيق البطاقة الخاصة بالمنشورات */
 .postblogs {
   color: aliceblue;
   background-color: transparent;
-  padding: 20px; /* زيادة المسافة داخل البطاقة */
+  padding: 20px; 
   border-radius: 12px;
   margin-top: 20px;
   text-align: center;
-  transition: transform 0.3s ease-in-out; /* إضافة تأثير التكبير */
-}
+  transition: transform 0.3s ease-in-out; }
 
-/* تنسيق الصورة داخل البطاقة */
+
 .postblogs .imgblogs {
   border-radius: 12px;
-  height: 150px; /* زيادة ارتفاع الصورة لتتناسب مع محتوى البطاقة */
-  width: 80%; /* جعل الصورة تأخذ عرض البطاقة بالكامل */
-  object-fit: cover; /* لضمان ملاءمة الصورة داخل البطاقة */
+  height: 150px; 
+  width: 80%;
+  object-fit: cover; 
 }
 
-/* تنسيق النصوص داخل البطاقة */
+
 .post-titleblogs,
 .post-authorblogs,
 .post-dateblogs {
-  margin-left: 0; /* إزالة الهوامش الجانبية */
-  padding-top:3px; /* تحسين المسافات بين النصوص */
+  margin-left: 0; 
+  padding-top:3px; 
   padding-bottom: 5px;
 }
 
 /* تحسين التنسيق عند التحويم */
 .postblogs:hover {
-  transform: scale(1.05); /* تكبير البطاقة عند التحويم */
+  transform: scale(1.05); 
 }
 
 /* تحسين الباجينايشن */
 .pagination {
   display: flex;
   justify-content: center;
-  gap: 15px; /* زيادة المسافة بين الأزرار */
+  gap: 15px; 
 }
 
 .pagination-number {

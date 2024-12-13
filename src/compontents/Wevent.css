@@ -185,14 +185,14 @@ text-decoration: none;}
   height: 500px;
   background-position: center;
   border-radius: 10px;
-  transform: translateX(100px); /* تبدأ من اليمين */
+  transform: translateX(100px);
   transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0; /* تبدأ شفافة */
+  opacity: 0; 
 }
 
 .unique-slider.slider-visible .unique-event-image {
-  transform: translateX(0); /* تصل إلى وضعها الطبيعي */
-  opacity: 1; /* تصبح مرئية */
+  transform: translateX(0); 
+  opacity: 1; 
 }
 
 .unique-slider {
@@ -232,12 +232,12 @@ text-decoration: none;}
   height: 500px;
   background-position: center;
   border-radius: 10px;
-  transform: translateX(200px); /* الصورة تبدأ بعيدًا من اليمين */
+  transform: translateX(200px); 
   transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0; /* تبدأ غير مرئية */
+  opacity: 0; 
 }
 
 .unique-slider.slider-visible .unique-event-image {
-  transform: translateX(0); /* تعود إلى مكانها الطبيعي */
-  opacity: 1; /* تصبح مرئية */
+  transform: translateX(0); 
+  opacity: 1; 
 }
