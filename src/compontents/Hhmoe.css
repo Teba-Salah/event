@@ -195,7 +195,7 @@ h2{  font-size:0.7em;
 
 .hero-content {
   
-  margin-left: 30px;
+  margin-left: 70px;
   margin-top: -40px; /* رفع المحتوى قليلاً للأعلى */
   animation: slideInFromRight 2.5s ease-out; /* تطبيق حركة النص من اليمين */
 }
