@@ -6,6 +6,7 @@
     background: linear-gradient(220deg, #2c3e50, #597f98, #0a1422);
     border-radius: 50px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
   }
   
   .special-event-form .eventform{

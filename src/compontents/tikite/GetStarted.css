@@ -65,7 +65,11 @@ input[type="text"]::placeholder,
 input[type="number"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="email"]::placeholder,
-input[type="password"]::placeholder {
+input[type="password"]::placeholder,
+input[type="file"]::placeholder,
+input[type="date"]::placeholder,
+input[type="time"]::placeholder
+ {
   color: #ddd;
 }
 input[type="text"]:focus,
