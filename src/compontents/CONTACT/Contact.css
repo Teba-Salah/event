@@ -1,0 +1,40 @@
+.contact-section {
+    position: relative;
+    background-image: url('../imges/akbkk.png'); /* Replace with the correct image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }

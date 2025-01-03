@@ -1,0 +1,45 @@
+/* Event Statistics Section */
+.EventStatistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .SingleStat {
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .SingleStat:hover {
+    transform: scale(1.1);
+  }
+  
+  .SingleStat h3 {
+    font-size: 30px;
+    color: #AF621B;
+    transition: color 0.3s ease;
+  }
+  
+  .SingleStat p {
+    font-size: 15px;
+    color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .EventStatistics {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .SingleStat h3 {
+      font-size: 24px;
+    }
+  
+    .SingleStat p {
+      font-size: 12px;
+    }
+  }
+  

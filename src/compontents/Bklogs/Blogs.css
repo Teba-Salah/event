@@ -1,0 +1,313 @@
+.tt{display: flex;
+height: 1130px;
+padding: 20px;
+margin-top: 40px;}
+
+  .sidebarrr {
+    width: 25%;
+    padding: 20px;
+    color: #ffff;
+    padding-bottom: 10px;
+}
+
+  .categories ,.h2{
+    padding-bottom: 10px;
+    line-height: 30%;
+  }
+
+
+
+  .categoriesblogs{
+    line-height: 0;
+    line-height: 25%;
+  }
+  
+  .latest-postss {
+    margin-top: 1px;
+    color: #ffff;
+    list-style-type: none;
+    padding: 0;
+   
+  }
+  
+  .latest-postss  .h2blogs {
+    font-size: 16px;
+    color: #ffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .post-dateblogs {
+    font-size: 14px;
+    color:  #c0c0c0;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-left: 50px;
+    
+  }
+  
+  .post-titleblogs {
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0px;
+    color:#c0c0c0;  
+    padding-bottom: 0px;
+    margin-left: 50px;
+  }
+  
+  .post-authorblogs {
+    font-size: 14px;
+    color:#c0c0c0;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 45px;
+
+  }
+  
+  .tag-containerblogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  .tagblogs {
+    background-color:#AF621B ;
+    padding: 5px 10px;
+    border-radius:10px;
+    color: white;
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  
+  .contentblogs {
+    width: 15%;
+    margin-top: 100px;
+  }
+  
+  .post-gridblogs {
+    display: grid;
+    grid-template-columns: repeat(3, 0.7fr);
+    gap: 5px;
+  }
+  
+  .postblogs {
+    color:aliceblue;
+    background-color:transparent;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.postblogs .imgblogs {
+    border-radius: 8px;
+    height: 200px;
+    width: 350px;
+}
+
+.h33blo{
+    margin-left:40px;
+    font-size: 1rem;
+    padding-right: 60px;
+
+}
+.post-titleblogs, .post-authorblogs, .post-dateblogs {
+  margin-left: 0;
+  text-align: left; 
+  padding: 5px 0; 
+  line-height: 1.5; 
+}
+
+.ppblo{
+    margin-left:40px;
+    font-size:0.7rem;
+    padding-right: 60px;
+    text-align: left; 
+    margin-bottom: 10px;
+    
+}
+.pblogs{
+    margin-left:0px;
+}
+
+
+
+
+
+.post-gridblogs {
+  display: grid;
+  grid-template-columns: repeat(3, 0.6fr); 
+  gap: 10px; 
+  transition: transform 0.3s;
+}
+
+.postblogs {
+  color: aliceblue;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* إضافة تأثير التكبير */
+}
+
+.postblogs:hover {
+  transform: scale(1.05); /* تكبير البطاقة عند التحويم */
+}
+
+.postblogs:active {
+  animation: shake 0.2s linear; 
+}
+
+.postblogs .imgblogs {
+  border-radius: 8px;
+  height: 180px;
+  width: 300px;
+  transition: transform 0.3s ease; 
+}
+
+.postblogs:active .imgblogs {
+  transform: scale(0.95); }
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  margin-left:-50px;
+}
+
+ .pagination-number {
+  background: none;
+  border: 1px solid #AF621B;
+  color:#AF621B;
+  border-radius: 70px;
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.pagination-button{
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+  color:#AF621B;
+  text-align: center;
+
+}
+.pagination-number.active {
+  background-color: #AF621B;
+  color: #fff;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.h2blogshh{font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left:0px}
+
+.h2blogs{font-size:18px;
+margin-top: 30px;
+margin-bottom: -15px;
+margin-left: 0px;}
+
+.pop{font-size:16px;
+margin-left: 0px;
+margin-top: 30px;}
+
+
+.pblogs.active {
+  color:#AF621B; 
+  font-weight: bold;
+}
+.pblogs{font-size: 14px;}
+
+
+.contentblogs {
+  width: 30%; 
+  margin-top: 20px; 
+}
+
+
+.post-gridblogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+}
+
+.postblogs {
+  color: aliceblue;
+  background-color: transparent;
+  padding: 20px; 
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; }
+
+
+.postblogs .imgblogs {
+  border-radius: 12px;
+  height: 150px; 
+  width: 80%;
+  object-fit: cover; 
+}
+
+
+.post-titleblogs,
+.post-authorblogs,
+.post-dateblogs {
+  margin-left: 0; 
+  padding-top:3px; 
+  padding-bottom: 5px;
+}
+
+/* تحسين التنسيق عند التحويم */
+.postblogs:hover {
+  transform: scale(1.05); 
+}
+
+/* تحسين الباجينايشن */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.pagination-number {
+  background: none;
+  border: 1px solid #AF621B;
+  color: #AF621B;
+  border-radius: 50%;
+  width: 40px; /* زيادة حجم الأزرار */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-number.active {
+  background-color: #AF621B;
+  color: #fff;
+}
+
+.post-item{font-size: 14px;}
+.pagination-number:hover{color: #fff;}
+.pagination-button:hover{color: #AF621B;
+background-color: #af621b00;}
+
+

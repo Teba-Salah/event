@@ -1,0 +1,112 @@
+
+
+.footer {
+  background: linear-gradient(180deg, #0c1728, #162a47);
+  color: white;
+  padding: 8px 0; /* تم تقليل الـ padding */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px; 
+
+  
+  
+}
+.footer-section{margin-top:50px ;
+}
+a{text-decoration: none;
+color: #ffffff;}
+.footer-section h4 {
+  color: #fff;
+  padding-left: 10%; /* تم تقليل الـ padding */
+  text-align: left;
+   /* محاذاة العنوان إلى الوسط */
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 10%; /* تم تقليل الـ padding */
+  text-align:left; /* محاذاة القائمة إلى الوسط */
+}
+
+.footer-section ul li {
+  margin-bottom: 5px; /* تم تقليل الـ margin */
+  cursor: pointer;
+}
+
+.footer-section input {
+  padding: 6px; /* تم تقليل الـ padding */
+  margin-right: 6px; /* تم تقليل الـ margin */
+  background-color: transparent;
+  border-radius: 30px;
+  border-color: #fff;
+}
+
+.footer-section button {
+  background-color:#AF621B;
+  color: white;
+  padding: 5px 12px; /* تم تقليل حجم الزر */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  margin-top: 10px; /* تم تقليل الـ margin */
+  border-top: 1px solid #fefefe;
+  padding-top: 4px; /* تم تقليل الـ padding */
+}
+
+.text {
+  flex: 1;
+  margin: 15px; /* تم تقليل الـ margin */
+  text-align: left;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    padding: 6px; /* تم تقليل الـ padding */
+  }
+
+  .footer-section h4 {
+    padding-left: 0;
+
+  }
+
+  .footer-section ul {
+    padding: 0;
+  }
+
+  .footer-section input, 
+  .footer-section button {
+    width: 80%;
+    margin: 6px 0; /* تم تقليل الـ margin */
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
+ .foo{display: flex;
+justify-content: 40px;
+margin-left: 45px;
+border: none;}
+h4{font-size: 18px;}
+.footerpp{font-size: 18px;}

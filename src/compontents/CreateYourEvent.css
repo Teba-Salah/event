@@ -1,0 +1,94 @@
+
+.special-event-form {
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 50px auto; 
+    background: linear-gradient(220deg, #2c3e50, #597f98, #0a1422);
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  
+  .special-event-form .eventform{
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .eventform{
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .special-form-group {
+    margin-bottom: 20px; 
+    position: relative;
+  }
+  
+  .special-form-group label {
+    color: #fff;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+  }
+  
+  .special-form-input,
+  .special-form-textarea,
+  .special-form-file {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid ;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  .special-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .special-form-textarea::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .special-file-upload {
+    color: white;
+  }
+  
+  .special-form-button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    background-color:#AF621B;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 40px;
+    width: 200px;
+    display: block;
+    margin-left: auto; /* Align the button to the right */
+    margin-right: auto; /* Keep the button centered on mobile */
+  }
+  
+  .special-form-button:hover {
+    background-color: #995612;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .special-event-form {
+      padding: 20px;
+    }
+  
+    .special-form-button {
+      margin-left: auto; /* Ensure the button is centered on smaller screens */
+      margin-right: auto;
+    }
+  }
+input{border-radius: 40px;}  
+
+

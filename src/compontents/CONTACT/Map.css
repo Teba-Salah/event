@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .map-container {
+    position: relative;
+    background-color: #102040;
+    color: #fff;
+    margin-top: 150px;
+  }
+  
+  .leaflet-map {
+    display: flex;
+    height: 400px;
+    width: 100%;
+   
+    position: relative;
+  }
+  
+  .info-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #bf6a1b86; /* لون نصف شفاف */
+    padding: 16px;
+    height: 70px;
+    gap: 10px;
+    flex-wrap: wrap;
+    z-index: 1000; /* تأكيد أنها تظهر فوق جميع العناصر الأخرى */
+  }
+  
+  .info-footer div {
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .info-footer strong {
+    font-size: 1rem;
+    display: block;
+  }
+  
+  .info-footer p {
+    font-size: 0.9rem;
+    margin: 4px 0;
+   color: #fff;
+  }

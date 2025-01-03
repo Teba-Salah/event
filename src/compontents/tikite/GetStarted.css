@@ -1,0 +1,125 @@
+/* Adjust the container to ensure image is in the background */
+.container2 {
+  position: relative;
+ height: 1000px;
+}
+
+/* Background image styling */
+.background-image {
+  width: 100%;
+  height: 500px; /* Maintain the image's aspect ratio */
+  display: block;
+  position: relative;
+}
+
+/* Container for centering the form over the image */
+.form-container {
+  position: absolute; /* Allows the form to float over the image */
+  top: 0; /* Start at the top of the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures full-width form alignment */
+  padding-top: 50px; /* Add padding to adjust vertical alignment */
+}
+
+/* Styling for the form card */
+.form-card {
+  background: linear-gradient(220deg, #2c3e50, #597f98, #0a1422);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+  height: 600px;
+  margin-top: 130px;
+  max-width: 950px;
+}
+
+/* Styling for the inputs */
+.inputtikit
+{width:800px;
+  padding: 10px;
+  margin: 10px 0;
+  border:2px solid;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.inputtikit2
+{
+  padding: 10px;
+  margin: 10px 0;
+  border:2px solid;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+ 
+}
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="file"]::placeholder,
+input[type="date"]::placeholder,
+input[type="time"]::placeholder
+ {
+  color: #ddd;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  color: #ffffff;
+}
+
+input[type="password"]
+  
+/* Payment methods section */
+.payment-methods {
+  margin-top: 20px;
+}
+
+.payment-methods p {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.payment-methods label {
+  margin-bottom: 15px;
+  color: white;
+  display: block;
+  margin-left: 25px;
+  
+}
+
+.payment-methods input {
+  margin-left: 0px;
+ 
+}
+.payment_methods{margin-left: 0px;}
+/* Styling for the submit button */
+.submit-button {
+  width: 30%;
+  padding: 10px;
+  background-color: #AF621B;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 250px;
+ 
+}
+
+.submit-button:hover {
+  background-color:  #af6520;
+}

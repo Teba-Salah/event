@@ -1,0 +1,88 @@
+/* UniqueContactForm.css */
+
+.unique-contact-form {
+  background: linear-gradient(220deg, #2c3e50, #597f98, #0a1422);
+  border-radius: 10px;
+  padding: 40px;
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.unique-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 40px;
+  border-radius: 15px;
+}
+
+.unique-form-row input,
+.unique-form-row textarea {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid white;
+  outline: none;
+  transition: border-color 0.3s ease;
+  border-radius: 15px;
+}
+
+
+.unique-contact-textarea {
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  resize: none;
+  border-radius: 15px;
+}
+
+.unique-button {
+  background-color: #AF621B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.unique-button:hover {
+  background-color: #6c3d11;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 668px) {
+  .unique-form-row {
+      flex-direction: column;
+  }
+
+  .unique-form-row input,
+  .unique-form-row textarea {
+      margin: 5px 0;
+  }
+
+  .unique-button {
+      width: 100%;
+  }
+}

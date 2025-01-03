@@ -1,0 +1,358 @@
+
+
+.unique-event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.unique-t {
+  font-size: 2em;
+  display: flex;
+  margin-left: -100px;
+  margin-top: -0px;
+  color: #ffffff;
+  margin-bottom: 150px;
+}
+
+.unique-event-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.unique-date-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #0b1a30;
+  color: #fff;
+  border: 2px solid #63aeff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: -70px;
+  text-align: center;
+  margin-left: -70px;
+}
+
+.unique-event-content {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.unique-event-title {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: -15px;
+  margin-left: 39px;
+}
+
+.unique-event-details {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.unique-detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.unique-detail-item svg {
+  margin-right: 8px;
+}
+
+.unique-buy-button4 {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 120px;
+  text-align: left;
+  background-color: #AF621B;
+  margin-left: -0px;
+  border-radius: 30px;
+}
+
+.unique-buy-button4:hover {
+  transform: scale(1.1);
+  background-color: #86470b;
+  color: #fff;
+}
+
+.unique-slider-controls1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -550px;
+}
+
+.unique-slider-controls1 button {
+  background: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  border: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.unique-slider-controls1 button:hover {
+  color: #AF621B;
+  background-color:#0b1a3000;
+
+}
+
+.unique-event-image {
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.unique-slider.slider-visible .unique-event-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.unique-link-text4{color: #ffffff;
+text-decoration: none;}
+
+.unique-slider {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  gap: 20px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.unique-slider.slider-visible {
+  opacity: 1;
+}
+
+.unique-event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-50px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.unique-slider.slider-visible .unique-event-info {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.unique-event-image {
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  border-radius: 10px;
+  transform: translateX(100px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0; 
+}
+
+.unique-slider.slider-visible .unique-event-image {
+  transform: translateX(0); 
+  opacity: 1; 
+}
+
+.unique-slider {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  gap: 20px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.unique-slider.slider-visible {
+  opacity: 1;
+}
+
+.unique-event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-50px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.unique-slider.slider-visible .unique-event-info {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.unique-event-image {
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  border-radius: 10px;
+  transform: translateX(200px); 
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0; 
+}
+
+.unique-slider.slider-visible .unique-event-image {
+  transform: translateX(0); 
+  opacity: 1; 
+}
+/* الكود الأساسي يبقى كما هو */
+
+/* استعلام الوسائط للشاشات الأصغر من 932px */
+@media (max-width: 932px) {
+  .unique-event-info {
+    flex: 1;
+    transform: translateX(0);
+    opacity: 1;
+    margin: auto;
+  }
+
+  .unique-t {
+    font-size: 1.5em; /* تصغير حجم الخط */
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 50px; /* تقليل المسافة السفلية */
+  }
+
+  .unique-date-circle {
+    width: 60px; /* تصغير الدائرة */
+    height: 60px;
+    font-size: 0.9em; /* تصغير حجم النص داخل الدائرة */
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .unique-event-title {
+    font-size: 1em; /* تصغير حجم عنوان الحدث */
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .unique-event-details {
+    font-size: 0.8em; /* تقليل حجم تفاصيل الحدث */
+    text-align: center;
+  }
+
+  .unique-buy-button4 {
+    width: 100px; /* تصغير الزر */
+    padding: 8px 10px;
+    font-size: 0.9em; /* تصغير النص داخل الزر */
+    margin: auto;
+  }
+
+  .unique-slider-controls1 {
+    justify-content: space-around;
+    margin-left: 0; /* ضبط المحاذاة */
+    gap: 10px;
+  }
+
+  .unique-event-image {
+    width: 300px; /* تقليل حجم الصورة */
+    height: 300px;
+    margin: auto;
+  }
+
+  .unique-slider {
+    flex-direction: column; /* جعل العناصر فوق بعضها */
+    margin-top: 50px; /* تقليل المسافة العلوية */
+    margin-bottom: 50px; /* تقليل المسافة السفلية */
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/* استعلام الوسائط للشاشات الأصغر من 480px */
+@media (max-width: 480px) {
+  .unique-t {
+    font-size: 1.2em; /* مزيد من تصغير الخط */
+    margin-bottom: 30px;
+  }
+
+  .unique-date-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 0.8em;
+  }
+
+  .unique-event-title {
+    font-size: 0.9em; /* مزيد من تصغير الخط */
+  }
+
+  .unique-event-details {
+    font-size: 0.7em; /* تصغير إضافي للتفاصيل */
+  }
+
+  .unique-buy-button4 {
+    width: 80px; /* تصغير إضافي للزر */
+    padding: 5px;
+    font-size: 0.8em;
+  }
+
+  .unique-slider {
+    gap: 5px; /* تقليل المسافات بين العناصر */
+  }
+
+  .unique-event-image {
+    width: 200px; /* تقليل حجم الصورة أكثر */
+    height: 200px;
+  }
+
+  .unique-slider-controls1 button {
+    font-size: 1.2em; /* تصغير أزرار التحكم */
+  }
+}
+
+/* تحسين العرض للشاشات الصغيرة جدًا */
+@media (max-width: 320px) {
+  .unique-t {
+    font-size: 1em; /* تصغير إضافي للعنوان */
+  }
+
+  .unique-event-details {
+    font-size: 0.6em; /* مزيد من التصغير */
+  }
+
+  .unique-buy-button4 {
+    width: 70px; /* تصغير عرض الزر */
+    padding: 5px;
+    font-size: 0.7em;
+  }
+
+  .unique-event-image {
+    width: 150px; /* تصغير الصورة أكثر */
+    height: 150px;
+  }
+
+  .unique-slider {
+    padding: 5px;
+  }
+}
+

@@ -1,0 +1,98 @@
+.container {
+    position: relative;
+    width: 100%;
+  height: 1300px;
+
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; 
+  }
+  
+  .content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+  height:300px;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+    z-index: 1; 
+  }
+
+.event-banner {
+  background-image: url('../imges/view eventes.png'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 50vh;
+  margin-top: 430px;
+  
+}
+
+.event-text {
+  display: flex;
+  flex-direction: column; /* Ensures the heading and paragraph stack */
+  justify-content: center;
+  align-items: center;
+}
+
+.event-text h1 {
+  font-size: 2rem;
+  margin: 0; 
+}
+
+.event-text p {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.event-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.event-signup input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  width: 250px;
+  max-width: 90%;
+  border: none;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.event-signup button {
+  background-color: #AF621B;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-signup button:hover {
+  background-color: #8a582c;
+
+}
+label{color: #ffffff;}
+
+input:focus, textarea:focus {
+  outline: none; 
+  border: 2px solid #AF621B; 
+  box-shadow: 0 0 5px #bd6b1f; }
+.ff{height: 40px;}

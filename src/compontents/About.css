@@ -1,0 +1,268 @@
+
+
+.AppContainer {
+  text-align: center;
+}
+
+/* Banner */
+
+
+/* Overall Features Section */
+.EventFeatures {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0B182B;
+  color: white;
+  padding: 50px;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Left Side */
+.FeaturesLeft {
+  flex: 1;
+  max-width: 30%;
+  text-align: left;
+}
+
+.FeaturesLeft ,h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Right Side */
+.FeaturesRight {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Feature Box */
+.FeatureBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.FeatureIcon {
+  font-size: 3rem; /* Adjust icon size */
+  color:z#c1820d;
+}
+
+.FeatureContent ,h3 {
+  font-size: 1.75rem;
+  text-align: justify;
+  margin-bottom:5px;
+  color: white;
+}
+.hh3{
+  margin-left:50px;
+}
+.FeatureContent ,.pabout {
+  font-size:1rem;
+  text-align: justify;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Line Separator */
+.LineSeparator {
+  width:998px;
+  height: 2px;
+  margin-left:-80px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .EventFeatures {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .FeaturesLeft {
+    max-width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .FeaturesRight {
+    gap: 30px;
+  }
+
+  .FeatureContent, h3 {
+    font-size: 1.5rem;
+  }
+
+          
+ .FeatureContent ,.pabout {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .FeaturesLeft h2 {
+    font-size: 2rem;
+  }
+
+  .FeatureContent ,h3 {
+    font-size: 1.25rem;
+  }
+
+  .FeatureContent, p {
+    font-size: 0.9rem;
+  }
+
+  .EventFeatures {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .FeaturesLeft h2 {
+    font-size: 1.5rem;
+  }
+
+  .FeatureBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FeatureIcon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .FeatureContent h3 {
+    font-size: 1.1rem;
+  }
+
+  .FeatureContent p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
+/* Statistics */
+.EventStatistics {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  color: white;
+}
+
+.SingleStat h3 {
+  font-size: 30px;
+}
+
+.SingleStat p {
+  font-size: 15px;
+}
+
+
+/* Attendees */
+.AttendeeRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.AttendeeCard {
+  flex: 1 0 200px;
+  margin: 10px;
+}
+
+.AttendeeImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Slider Container */
+.AttendeeSlider {
+  width: 90%;
+  padding: 10px 0;
+}
+
+.AttendeeCard {
+  margin: 10px;
+  padding: 10px;
+  background-color:transparent;
+  border-radius: 10px;
+}
+
+.AttendeeImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+.stabout{
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+/* Basic styling */
+.EventSpeakers {
+  text-align: center;
+  padding: 40px;
+}
+
+.SpeakerGrid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.SpeakerCard {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.118);
+  transition: transform 0.3s;
+  gap: 20px;
+}
+
+.SpeakerCard:hover {
+  transform: translateY(-5px);
+}
+
+/* Speaker Image Styling */
+.SpeakerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay styling */
+.SpeakerOverlay {
+  position: absolute;
+  bottom: -50px; /* Start hidden below the image */
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.195);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.SpeakerCard:hover .SpeakerOverlay {
+  bottom: 0; /* Move up to reveal the name */
+}
+.speaker22{display: flex;
+margin-left: 30px;}
