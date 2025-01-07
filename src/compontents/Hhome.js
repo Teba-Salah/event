@@ -43,11 +43,12 @@ export function Hhmoe(props) {
           }}
         >
           <h2 className='hh2'>WHO WE ARE</h2>
-          <p>Eventify is a comprehensive platform for organizing and promoting events, conferences, and other industry-related gatherings. Our team of experienced professionals is dedicated to providing unparalleled event management solutions that streamline your event planning process and maximize your ROI. We believe that events are powerful tools for driving growth, innovation, and success, and we're committed to helping you make the most of every event.</p>
+          <p className='pkj'>Eventify is a comprehensive platform for organizing and promoting events, conferences, and other industry-related gatherings. Our team of experienced professionals is dedicated to providing unparalleled event management solutions that streamline your event planning process and maximize your ROI.
+             We believe that events are powerful tools for driving growth, innovation, and success, 
+             and we're committed to helping you make the most of every event.</p>
           <button className="get-started"><Link to="/CreateYourEvent" >Get Started </Link> </button>
         </div>
-        <div 
-          className={`about-image ${imageInView ? 'appear' : ''}`}
+        <div className={`about-image ${imageInView ? 'appear' : ''}`}
           ref={imageRef} 
           style={{ 
             transform: imageInView ? 'translateX(0)' : 'translateX(50px)'

@@ -96,8 +96,8 @@ const About = () => {
               <FaAward size={50} color="#ffffff" /> {/* Icon with white color */}
             </div>
             <div className="FeatureContent">
-              <h3 className="hh3">Excellence</h3>
-              <p className="pabout">
+              <h3 className="hh32">Excellence</h3>
+              <p className="pabout2">
                 At Gravity, we're dedicated to excellence in everything we do. Attention to detail, 
                 creativity, and precision in execution ensure that every event exceeds expectations.
               </p>

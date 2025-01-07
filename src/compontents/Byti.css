@@ -93,75 +93,109 @@
 .event-button:hover {
     opacity: 0.8;
 }
+/* القواعد الأساسية للتصميم تبقى كما هي */
 
-/* Responsive for mobile */
-@media (max-width: 600px) {
-    .event-title {
-        font-size: 1.2rem;
-    }
+/* Media Queries للأجهزة اللوحية (Tablet) */
+@media (max-width: 768px) {
+  .timer-containert {
+    padding: 15px;
+    margin-top: -50px;
+  }
 
-    .event-subtitle {
-        font-size: 1.5rem;
-    }
+  .event-title3 {
+    font-size: 1.2rem; /* تقليل حجم العنوان */
+    margin-bottom: 8px;
+  }
 
-    .timer-display {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .event-subtitle {
+    font-size: 1.5rem; /* تصغير حجم العنوان الفرعي */
+    margin: 15px 0;
+  }
 
-    .time-segment {
-        padding: 10px;
-    }
+  .timer-display {
+    flex-direction: column; /* ترتيب الوقت عموديًا */
+    gap: 10px;
+  }
 
-    .time-segment span {
-        font-size: 1.5rem;
-    }
+  .time-segment {
+    padding: 15px; /* تقليل الحواف */
+    border-radius: 8px;
+  }
 
-    .time-segment p {
-        font-size: 0.9rem;
-        margin-right: 0;
-    }
+  .time-segment span {
+    font-size: 1.5rem; /* تصغير حجم الأرقام */
+  }
 
-    .action-buttons {
-        flex-direction: column;
-        gap: 5px;
-    }
+  .time-segment p {
+    font-size: 0.9rem; /* تصغير النص */
+    margin-right: 0; /* إزالة الهامش */
+    margin-top: 5px;
+  }
 
-    .event-button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-       
-    }
+  .action-buttons {
+    flex-direction: column; /* ترتيب الأزرار عموديًا */
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .event-details-btn,
+  .event-ticket-btn {
+    width: 100%; /* اجعل الأزرار تملأ العرض */
+    text-align: center;
+  }
 }
 
-/* Responsive for tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .event-title {
-        font-size: 1.3rem;
-    }
+/* Media Queries للأجهزة الصغيرة (Mobile) */
+@media (max-width: 480px) {
+  .timer-containert {
+    padding: 20px;
+    margin-bottom:70px;
+    margin-top:-130px;
+  }
 
-    .event-subtitle {
-        font-size: 1.75rem;
-    }
+  .event-title3 {
+    font-size: 1rem; /* تقليل حجم العنوان */
+  }
 
-    .timer-display {
-        gap: 15px;
-    }
+  .event-subtitle {
+    font-size: 1.2rem; /* تقليل حجم العنوان الفرعي */
+    margin: 10px 0;
+  }
 
-    .time-segment {
-        padding: 15px;
-    }
+  .timer-display {
+    gap: 5px;
+  }
 
-    .time-segment span {
-        font-size: 1.8rem;
-    }
+  .time-segment {
+    padding: 10px;
+    border-radius: 5px;
+  }
 
-    .time-segment p {
-        font-size: 1rem;
-    }
+  .time-segment span {
+    font-size: 1.2rem;
+  }
 
-    .event-button {
-        padding: 9px 18px;
-        font-size: 1rem;
-    }
+  .time-segment p {
+    font-size: 0.8rem;
+    transform: translateX(-25px);
+  }
+
+  .event-details {
+    margin: 10px; /* تقليل الهوامش */
+    font-size: 0.9rem; /* تقليل حجم النص */
+  }
+
+  .action-buttons {
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .event-details-btn,
+  .event-ticket-btn {
+    width: 40%;
+    font-size: 0.9rem; /* تقليل حجم النص في الأزرار */
+    padding: 8px;
+    transform: translateX(130px);
+  }
 }
+

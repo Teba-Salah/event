@@ -1,12 +1,6 @@
-
-
 .AppContainer {
   text-align: center;
 }
-
-/* Banner */
-
-
 /* Overall Features Section */
 .EventFeatures {
   display: flex;
@@ -78,77 +72,6 @@
   background-color: #ffffff;
   margin-top: 20px;
 }
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .EventFeatures {
-    flex-direction: column;
-    padding: 30px;
-  }
-
-  .FeaturesLeft {
-    max-width: 100%;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  .FeaturesRight {
-    gap: 30px;
-  }
-
-  .FeatureContent, h3 {
-    font-size: 1.5rem;
-  }
-
-          
- .FeatureContent ,.pabout {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .FeaturesLeft h2 {
-    font-size: 2rem;
-  }
-
-  .FeatureContent ,h3 {
-    font-size: 1.25rem;
-  }
-
-  .FeatureContent, p {
-    font-size: 0.9rem;
-  }
-
-  .EventFeatures {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .FeaturesLeft h2 {
-    font-size: 1.5rem;
-  }
-
-  .FeatureBox {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .FeatureIcon {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-
-  .FeatureContent h3 {
-    font-size: 1.1rem;
-  }
-
-  .FeatureContent p {
-    font-size: 0.85rem;
-    text-align: center;
-  }
-}
-
 /* Statistics */
 .EventStatistics {
   display: flex;
@@ -266,3 +189,98 @@
 }
 .speaker22{display: flex;
 margin-left: 30px;}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .EventFeatures {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .FeaturesLeft {
+    max-width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .FeaturesRight {
+    gap: 30px;
+  }
+
+  .FeatureContent, h3 {
+    font-size: 1.5rem;
+  }
+
+          
+ .FeatureContent ,.pabout {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .FeaturesLeft h2 {
+    font-size: 2rem;
+  }
+
+  .FeatureContent ,h3 {
+    font-size: 1.25rem;
+  }
+
+  .FeatureContent, p {
+    font-size: 0.9rem;
+  }
+
+  .EventFeatures {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .FeaturesLeft h2 {
+    font-size: 1rem;
+    transform: translateX(40px);
+  }
+
+  .FeatureBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FeatureIcon {
+    font-size: 0.5rem;
+    margin-bottom: -70px;
+  }
+
+  .FeatureContent h3 {
+    font-size:1rem;
+    
+    transform: translateX(35px);
+  }
+
+  .FeatureContent p {
+    font-size: 0.6rem;
+    transform: translateX(35px);
+  }
+  .pabout{max-width: 300px;
+    text-align: left;}
+
+  .hh32{font-size:1rem;
+  padding: 0;
+  max-width: 300px;
+  text-align: left;
+  margin-left: -400px;
+    } 
+    
+    
+  .pabout2{
+  padding: 0;
+  max-width: 300px;
+  text-align: left;
+  margin-left: -400px;
+}
+.FeatureIcon{
+  transform: translateX(-430px);
+  margin-top: 20px;
+  padding: 0;
+}
+}

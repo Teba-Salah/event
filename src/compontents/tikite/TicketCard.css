@@ -79,13 +79,58 @@
     background-color: #9b5819;
   }
   
- 
-  @media (max-width: 768px) {
-    .ticket-container {
-      flex-direction: column;
-    }
-    
-    .ticket-card {
-      width: 100%;
-    }
+ /* للشاشات المتوسطة (تابلت) */
+@media (max-width: 768px) {
+  .ticket-container {
+      justify-content: center; /* توسيط الكروت */
   }
+
+  .ticket-card {
+      flex: 1 1 calc(45% - 30px); /* عرض كرتين في الصف */
+      max-width: 400px;
+  }
+}
+
+/* للشاشات الصغيرة جدًا (موبايل) */
+@media (max-width: 480px) {
+  .App {
+    margin-top: -700px;
+}
+  .ticket-container {
+      gap: 15px; /* تقليل المسافة بين الكروت */
+  }
+
+  .ticket-card {
+      flex: 1 1 100%; /* عرض الكرت بعرض الشاشة */
+      width: 100%;
+      max-width: 100%;
+    
+  }
+
+  .ticket-card h2 {
+      font-size: 0.8rem; /* تصغير الخط */
+      text-align: center;
+    
+  }
+
+  .ticket-card button {
+      font-size: 0.6rem; /* تصغير حجم الزر */
+      padding: 8px 15px;
+  }
+  
+  
+  .ticket-card h3 {
+    font-size: 0.6rem;
+    
+  }
+  
+  .ticket-card ul {
+    font-size: 0.5rem;
+  }
+  
+  .ticket-card li {
+    font-size: 0.5rem;
+  }
+  
+
+}

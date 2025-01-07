@@ -96,3 +96,118 @@ input:focus, textarea:focus {
   border: 2px solid #AF621B; 
   box-shadow: 0 0 5px #bd6b1f; }
 .ff{height: 40px;}
+
+/* استجابة لعرض الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .background-image {
+    height: 30vh; /* تقليل ارتفاع الصورة */
+  }
+
+  .content {
+    top: 45%; /* تعديل الموضع النسبي */
+    padding: 15px; /* تقليل المسافة الداخلية */
+  }
+
+  .event-banner {
+    padding: 20px;
+    min-height: 30vh; /* تقليل الارتفاع النسبي */
+  }
+
+  .event-text h1 {
+    font-size: 1.2rem; /* تقليل حجم النص */
+  }
+
+  .event-text p {
+    font-size: 0.9rem;
+  }
+
+  .event-signup input {
+    font-size: 0.9rem;
+    padding: 8px; /* تقليل المساحة الداخلية */
+  }
+
+  .event-signup button {
+    font-size: 0.9rem;
+    padding: 8px 15px; /* تقليل حجم الزر */
+  }
+}
+
+/* استجابة لعرض شاشات الموبايل الصغيرة جدًا */
+@media (max-width: 480px) {
+  
+  .background-image {
+    height: 40%;
+  }
+  
+  .content {
+    height:250px;
+    top: 70%;
+    padding: 7px;
+  }
+
+.event-banner {
+  padding: 50px 20px;
+  min-height: 40vh;
+  margin-top: 330px;
+  
+}
+
+.event-text {
+  display: flex;
+  flex-direction: column; /* Ensures the heading and paragraph stack */
+  justify-content: center;
+  align-items: center;
+}
+
+.event-text h1 {
+  font-size: 2rem;
+  margin: 0; 
+}
+
+.event-text p {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.event-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.event-signup input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  width: 250px;
+  max-width: 90%;
+  border: none;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.event-signup button {
+  background-color: #AF621B;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-signup button:hover {
+  background-color: #8a582c;
+
+}
+label{color: #ffffff;}
+
+input:focus, textarea:focus {
+  outline: none; 
+  border: 2px solid #AF621B; 
+  box-shadow: 0 0 5px #bd6b1f; }
+.ff{height: 40px;}
+}

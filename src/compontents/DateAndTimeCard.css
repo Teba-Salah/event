@@ -20,6 +20,8 @@
   
   .card-Date-content {
     padding: 20px;
+    margin-left:40px;
+    font-size: 1.5em;
 
   }
   
@@ -164,3 +166,163 @@
   .h2j{margin-left: -13px;
   font-size: 28px;}
   .marg{margin-left:0px;}
+  
+
+  @media (max-width: 768px) {
+    .card-Date {
+      width: 300px; /* تقليل عرض البطاقة */
+      height: auto; /* السماح بارتفاع ديناميكي */
+      margin: 20px auto; /* محاذاة البطاقة في المنتصف */
+    }
+  
+    .card-Date-header {
+      font-size: 1.5em; /* تقليل حجم النص */
+      padding: 20px; /* تقليل الحواف */
+    }
+  
+    .card-Date-content {
+      padding: 15px; /* تقليل الحواف الداخلية */
+    }
+  
+    .info-Date {
+      font-size: 0.9em; 
+      flex-direction: column;
+      text-align: center; 
+    }
+  
+    .buy-ticket {
+      width: 50%; 
+      height: auto; 
+      font-size: 1em; 
+      padding: 10px; 
+    }
+  
+    .speaker-info {
+      width: 100%; 
+      margin-right: 0; 
+      margin-top: 10px;
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .speaker-image {
+      width: 120px; 
+      height: 120px; 
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  
+    .speaker-content {
+      text-align: center; 
+    }
+  
+    .events-list {
+      margin-left: 0; /* إزالة المحاذاة الجانبية */
+      margin-top: 10px; /* تقليل المسافة العلوية */
+      gap: 15px; /* تقليل الفجوات بين العناصر */
+      align-items: center; /* محاذاة العناصر في المنتصف */
+    }
+  
+    .event-card {
+      width: 90%; /* تقليل العرض لتناسب الشاشة */
+      height: auto; /* السماح بارتفاع ديناميكي */
+      flex-direction: column; /* ترتيب عمودي للعناصر */
+      text-align: center; 
+    }
+  
+    .event-image {
+      width: 100px; 
+      height: 100px;
+      margin-right: 0;
+      margin-bottom: 10px; 
+    }
+  
+    .event-details h4 {
+      font-size: 0.9em; 
+    }
+  
+    .event-details p {
+      font-size: 0.8em; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-Date {
+      width: 50%; 
+      margin-bottom: 20px; 
+      height: 370px;
+      font-size: 0.7em; 
+    }
+    .info-Date{display: flex;}
+    .card-Date-header {
+      font-size: 1em; 
+      padding: 10px; 
+    }
+  
+    .card-Date-content {
+      padding: 5px; 
+      
+    }
+  
+    .buy-ticket {
+      font-size: 0.7em; 
+      padding: 5px; 
+      width: 100px;
+    }
+  
+    .speaker-info {
+      margin-top: 10px;
+      font-size: 0.7em;
+      text-align:left; 
+      
+    }
+
+  .speakerinfo{text-align: left;
+  font-size: 0.6em;
+  width: 95%; 
+  max-width: 350px !important;
+  transform: translateX(-15px);
+  }
+    
+    .speaker-image {
+      width: 250px; 
+      height: 150px;
+    }
+  
+    .events-list {
+      gap: 10px; 
+      margin-top: 10px; 
+    }
+  
+    .event-card {
+      width: 80%; 
+      height: 70px;
+      
+    }
+  
+    .event-image {
+      width:100px; 
+      height:70px;
+      margin-bottom: 0px;
+      transform: translateX(-100px);
+    }
+  
+    .event-details h4 {
+      font-size: 0.7em; 
+      margin-top: -50px;
+      transform: translateX(40px);
+    }
+  
+    .event-details p {
+      font-size: 0.5em; 
+    }
+
+  .color {
+    font-size: 12px !important; /* Smaller font for mobile screens */
+  }
+
+  .marg {
+    font-size: 10px !important; /* Smaller font for mobile screens */
+  }
+  .hh222{font-size: 14px !important; }
+  }

@@ -1,4 +1,4 @@
-// EventDetail.js
+
 import React from 'react';
 import { useParams , useNavigate } from 'react-router-dom';
 import eventData1 from './EventData'; 
@@ -45,7 +45,7 @@ const EventDetail = () => {
         {/* Event Info Section */}
         <div style={{ ...styles.eventInfo, backgroundImage: `url(${event.image})` }}>
           <button style={styles.backButton} onClick={() =>Navigate(-1)}>← BACK</button>
-          <h2 style={styles.eventTitle}>Digital Marketing Conference</h2>
+          <h2 className='hh222' style={styles.eventTitle}>Digital Marketing Conference</h2>
           <p style={styles.eventDescription} className="color" >
             Join us for a full-day conference on the latest trends and best practices in digital marketing. Led by renowned digital marketing expert Mark Johnson, this conference will cover topics such as SEO, PPC, social media marketing, and more. Don't miss this opportunity to learn from the best and take your digital marketing skills to the next level.
           </p>
@@ -97,13 +97,13 @@ const EventDetail = () => {
       <div className="speaker-info">
         <img src={speakerImage} alt="Speaker" className="speaker-image" />
         <div className='speaker-content'>
-        <h3>Mina Johnson</h3>
-        <p>
+        <h3 className='speakerinfo'>Mina Johnson</h3>
+        <p className='speakerinfo'>
           A leading digital marketing expert with over 15 years of experience in the industry.
           He has worked with some of the biggest brands in the world and has helped numerous
           businesses improve their online presence and drive revenue growth through digital marketing.
         </p>
-        <p className="contact-info">
+        <p className='speakerinfo'>
           <strong>Contact Info:</strong> <br />
           <a href="http://www.markjohnson.com">www.markjohnson.com</a> <br />
           <a href="mailto:mark@markjohnson.com">mark@markjohnson.com</a>

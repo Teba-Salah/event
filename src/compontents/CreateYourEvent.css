@@ -68,7 +68,7 @@
     margin-top: 20px;
     transition: background-color 0.3s ease;
     border-radius: 40px;
-    width: 200px;
+    width: 170px;
     display: block;
     margin-left: auto; /* Align the button to the right */
     margin-right: auto; /* Keep the button centered on mobile */
@@ -85,8 +85,14 @@
     }
   
     .special-form-button {
-      margin-left: auto; /* Ensure the button is centered on smaller screens */
-      margin-right: auto;
+      margin-left: auto; 
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+     
     }
   }
 input{border-radius: 40px;}  

@@ -1,51 +1,108 @@
+/* إعادة ضبط الافتراضيات */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .map-container {
-    position: relative;
-    background-color: #102040;
-    color: #fff;
-    margin-top: 150px;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* حاوية الخريطة */
+.map-container {
+  position: relative;
+  background-color: #102040;
+  color: #fff;
+  margin-top: 150px;
+  width: 100%;
+}
+
+/* إعداد الخريطة */
+.leaflet-map {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+/* شريط المعلومات السفلي */
+.info-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #bf6a1b86; /* لون نصف شفاف */
+  padding: 16px;
+  height: auto;
+  gap: 10px;
+  flex-wrap: wrap; /* تفعيل التفاف العناصر */
+  z-index: 1000;
+}
+
+.info-footer div {
+  text-align: center;
+  min-width: 120px;
+}
+
+.info-footer strong {
+  font-size: 1rem;
+  display: block;
+}
+
+.info-footer p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #fff;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
   .leaflet-map {
-    display: flex;
-    height: 400px;
-    width: 100%;
-   
-    position: relative;
+    height: 500px; /* تقليل ارتفاع الخريطة */
   }
-  
+
   .info-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #bf6a1b86; /* لون نصف شفاف */
-    padding: 16px;
-    height: 70px;
-    gap: 10px;
-    flex-wrap: wrap;
-    z-index: 1000; /* تأكيد أنها تظهر فوق جميع العناصر الأخرى */
+    flex-direction: column; /* جعل العناصر عمودية */
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* تقليل الفجوات بين العناصر */
+    padding: 10px;
   }
-  
+
   .info-footer div {
-    text-align: center;
-    min-width: 120px;
+    width: 100%; /* جعل العناصر تأخذ العرض الكامل */
+    max-width: 300px; /* الحد الأقصى للعرض */
   }
-  
+
   .info-footer strong {
-    font-size: 1rem;
-    display: block;
+    font-size: 0.7rem; /* تصغير النص */
   }
-  
+
   .info-footer p {
-    font-size: 0.9rem;
-    margin: 4px 0;
-   color: #fff;
+    font-size: 0.6rem; /* تقليل حجم النص */
   }
+}
+
+/* استجابة للشاشات الأصغر (الموبايلات) */
+@media (max-width: 480px) {
+  .leaflet-map {
+    height: 350px; /* تقليل ارتفاع الخريطة أكثر */
+  }
+
+  .info-footer {
+    padding: 8px;
+    gap: 2px; /* تقليل المسافات بين العناصر */
+  }
+
+  .info-footer div {
+    min-width: 100%; /* تأخذ العناصر العرض الكامل */
+    text-align: center;
+  }
+
+  .info-footer strong {
+    font-size: 0.6rem;
+  }
+
+  .info-footer p {
+    font-size: 0.5rem;
+  }
+}

@@ -1,6 +1,5 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
-/* src/App.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .last {
@@ -28,7 +27,7 @@
 .activeSlide {
     transform: scale(1.1);
     opacity: 1;
-    cursor: pointer; /* جعل السلايد القابل للنقر يكون به مؤشر اليد */
+    cursor: pointer;
 }
 
 .arrow {
@@ -68,99 +67,91 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* تخصيص النقاط */
+
 .slick-dots li button:before {
-    color: white; /* لون النقاط */
+    color: white;
 }
 
 .slick-dots li.slick-active button:before {
     color: #bd6c20;
-    /* لون النقطة النشطة */
+    
 }
-/* الكود الأساسي الذي زودتني به يبقى كما هو */
 
-/* استعلام الوسائط للشاشات الأصغر من 932px */
 @media (max-width: 932px) {
     .last {
-      width: 100%; /* تمديد العرض */
+      width: 100%; 
       margin: 5rem auto;
-      height: auto; /* جعل الطول مرنًا */
-      margin-top: 200px; /* تقليل المسافة العلوية */
-      margin-bottom: 30px; /* تقليل المسافة السفلية */
+      height: auto; 
+      margin-top: 200px; 
+      margin-bottom: 30px; 
     }
   
     .slide img {
-      width: 12rem; /* تقليل حجم الصور */
+      width: 12rem;
       margin-bottom: 30px;
     }
   
     .Laste_Events {
-      bottom: 450px; /* تعديل الموقع بناءً على التصميم الجديد */
-      left: 20px; /* تقليل المسافة الجانبية */
-      font-size: 1.5rem; /* تقليل حجم الخط */
-    }
+      bottom: 450px; 
+      left: 20px;
+      font-size: 1.5rem; }
   
     .arrow {
-      top: 45%; /* تعديل موقع الأسهم */
+      top: 45%;
     }
   
     .next {
-      right: 10px; /* تقريب السهم الأيمن */
+      right: 10px;
     }
   
     .prev {
-      left: 10px; /* تقريب السهم الأيسر */
+      left: 10px;
     }
   }
   
-  /* استعلام الوسائط للشاشات الأصغر من 480px */
   @media (max-width: 480px) {
     .last {
-      margin-top: 100px; /* تقليل المسافة العلوية */
-      height: auto; /* السماح للطول بالتكيف */
+      margin-top:100px; 
+      height: auto;
     }
   
     .slide img {
-      width: 10rem; /* تصغير الصور أكثر */
+      width: 16rem;
       margin-bottom: 20px;
     }
   
     .Laste_Events {
-      bottom: 400px; /* تعديل الموقع بناءً على التصميم الجديد */
-      left: 15px; /* تقليل المسافة الجانبية */
-      font-size: 1.2rem; /* تصغير الخط */
+      bottom: 400px; 
+      left: 15px; 
+      font-size: 1.5rem; 
     }
   
     .arrow {
-      top: 40%; /* ضبط موقع الأسهم */
+      top: 40%; 
     }
   
     .next {
-      right: 5px; /* تقريب السهم الأيمن */
+      right: 5px; 
     }
   
     .prev {
-      left: 5px; /* تقريب السهم الأيسر */
+      left: 5px; 
     }
   
     .slick-dots li button:before {
-      font-size: 8px; /* تقليل حجم النقاط */
+      font-size: 8px; 
     }
   
     .slick-dots li.slick-active button:before {
-      font-size: 10px; /* تصغير النقطة النشطة */
+      font-size: 10px;
+    }
+    .video-slide {
+      width: 100%;
+      max-width: 1000px; 
+      height: auto; 
+      margin: 0 auto;
     }
   }
   
-  /* تحسين العرض للشاشات الصغيرة جدًا */
-  @media (max-width: 320px) {
-    .slide img {
-      width: 8rem; /* حجم أصغر للصور */
-    }
-  
-    .Laste_Events {
-      font-size: 1rem; /* خط أصغر */
-      bottom: 350px;
-    }
-  }
+
   

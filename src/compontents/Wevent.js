@@ -7,7 +7,7 @@ const EventSlider = () => {
   const events = [
     {
       date: '14 AUG 2023',
-      title: 'KEYNOTE ADDRESS',
+      title: 'Future Leaders Summit',
       details: [
         { icon: <FaCalendarAlt />, text: 'August 14-15, 2025' },
         { icon: <FaClock />, text: '9:00 AM - 10:00 AM' },
@@ -19,7 +19,7 @@ const EventSlider = () => {
     },
     {
       date: '16 AUG 2023',
-      title: 'CREATIVE INDUSTRIES SYMPOSIUM',
+      title: 'Future Leaders Summit',
       details: [
         { icon: <FaCalendarAlt />, text: 'August 16, 2025' },
         { icon: <FaClock />, text: '10:00 AM - 4:00 PM' },
@@ -30,7 +30,7 @@ const EventSlider = () => {
     },
     {
       date: '23 AUG 2023',
-      title: 'THE FUTURE OF SUSTAINABILITY',
+      title: 'Future Leaders Summit',
       details: [
         { icon: <FaCalendarAlt />, text: 'August 23, 2025' },
         { icon: <FaClock />, text: '1:00 PM - 2:00 PM' },

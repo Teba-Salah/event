@@ -77,74 +77,57 @@
               margin: 20px 0 15px;
               }
 
-              /* Responsive adjustments */
+/* Media Query for mobile devices */
 @media (max-width: 768px) {
   .wrapper {
-    padding: 20px;
-    margin: 50px 20px;
+      flex-direction: column; 
+      padding: 20px; 
+      height: auto; 
+      width: 100%;
   }
 
   .wrapper h1 {
-    font-size: 28px;
+      font-size: 28px; 
   }
 
   .input-box input {
-    padding: 15px 35px 15px 15px;
+      font-size: 14px; 
+      padding: 12px 30px 12px 15px; 
   }
 
-  .input-box {
-    margin: 20px 0;
+  .wrapper button {
+      font-size: 14px; 
+      height: 40px; 
+  }
+
+  .wrapper .register-link {
+      font-size: 12px; 
   }
 }
 
 @media (max-width: 480px) {
   .wrapper {
-    padding: 15px;
-    margin: 50px 10px;
+      width: 85%;
+      padding: 15px; 
   }
 
   .wrapper h1 {
-    font-size: 24px;
+      font-size: 16px; 
   }
 
   .input-box input {
-    padding: 10px 30px 10px 10px;
+      font-size: 12px; 
+      padding: 10px 25px 10px 15px; 
+      width: 350px;
   }
 
-  .input-box .icon {
-    font-size: 14px;
-  }
-}  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-   .wrapper{
-      padding: 20px;
-    }
-  
-    .input-box .icon{
-      margin-left: auto; /* Ensure the button is centered on smaller screens */
-      margin-right: auto;
-    
-    }
-
-    .input-box input {
-      margin-left: auto; /* Ensure the button is centered on smaller screens */
-      margin-right: auto;
-    }
+  .wrapper button {
+      font-size: 12px;
+      height: 35px; 
   }
 
-  @media (max-width: 508px) {
-    .wrapper{
-       padding: 10px;
-     }
-   
-     .input-box .icon{
-       margin-left: auto; /* Ensure the button is centered on smaller screens */
-       margin-right: auto;
-     }
- 
-     .input-box input {
-       margin-left: auto; /* Ensure the button is centered on smaller screens */
-       margin-right: auto;
-     }
-   }
+  .wrapper .register-link {
+      font-size: 10px;
+  }
+}
+

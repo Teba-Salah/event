@@ -14,18 +14,10 @@ function Lastevent() {
   const [videoIndex, setVideoIndex] = useState(0);
 
   const settings = {
-    infinite: true, // تفعيل اللوب
-    lazyLoad: true,
-    speed: 300,
-    slidesToShow: 3,
-    centerMode: true,
-    centerPadding: 0,
-    dots: true, // تفعيل النقاط
-    swipe: true, // تفعيل السحب اليدوي
-    draggable: true, // السماح بالسحب
-    autoplay: true, // تفعيل التشغيل التلقائي
-    autoplaySpeed: 2000, // سرعة التغيير التلقائي (بالميلي ثانية)
-    arrows: false, // إخفاء الأسهم
+    infinite: true, lazyLoad: true,speed: 300, slidesToShow: 3,centerMode: true,centerPadding: 0,dots: true, swipe: true, draggable: true, 
+    autoplay: true,
+    autoplaySpeed: 2000, 
+    arrows: false, 
 
     beforeChange: (current, next) => setVideoIndex(next),
     afterChange: (current) => setVideoIndex(current),
@@ -39,7 +31,7 @@ function Lastevent() {
           <div
             className={idx === videoIndex ? "slide activeSlide" : "slide"}
             key={idx}
-            onClick={() => setVideoIndex(idx)} // السماح بالانتقال عبر النقر على السلايد
+            onClick={() => setVideoIndex(idx)} 
           >
             <ReactPlayer 
               url={video} 

@@ -8,17 +8,17 @@ const Login = () => {
   const [Username, SetUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setEerror] = useState('');
-  const [isUsernameTyping, setIsUsernameTyping] = useState(false); // حالة لحقول الإدخال
+  const [isUsernameTyping, setIsUsernameTyping] = useState(false);
   const [isPasswordTyping, setIsPasswordTyping] = useState(false);
 
   const handleUsernameChange = (e) => {
     SetUsername(e.target.value);
-    setIsUsernameTyping(e.target.value.length > 0); // تحديث الحالة عند الكتابة
+    setIsUsernameTyping(e.target.value.length > 0); 
   }
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-    setIsPasswordTyping(e.target.value.length > 0); // تحديث الحالة عند الكتابة
+    setIsPasswordTyping(e.target.value.length > 0);
   }
 
   const handleSubmit = async (event) => {
@@ -52,7 +52,7 @@ const Login = () => {
               onChange={handleUsernameChange} 
               required 
             />
-            {!isUsernameTyping && <FaUserAlt className='icon' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
+            {!isUsernameTyping && <FaUserAlt className='icon' />} 
           </div>
           <div className="input-box">
             <input 
@@ -62,7 +62,7 @@ const Login = () => {
               onChange={handlePasswordChange}  
               required 
             />
-            {!isPasswordTyping && <FaLock className='icon2' />} {/* عرض الأيقونة فقط إذا لم يكن هناك نص */}
+            {!isPasswordTyping && <FaLock className='icon2' />} 
           </div>
           {error && <h5 className='error-message'>{error}</h5>}
           <div className="remember-forgot">
@@ -71,7 +71,7 @@ const Login = () => {
           </div>
           <button type="submit">Login</button>
           <div className="register-linkss">
-            <p>Don't have an account?  <Link to="/Signup" className='singgg'> Sign in</Link></p>
+            <p >Don't have an account?  <Link to="/Signup" className='singgg'> Sign in</Link></p>
           </div>
         </form>
       </div>

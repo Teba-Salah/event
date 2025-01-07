@@ -1,20 +1,23 @@
 /* UniqueContactForm.css */
 
+/* القواعد الأساسية */
 .unique-contact-form {
   background: linear-gradient(220deg, #2c3e50, #597f98, #0a1422);
   border-radius: 10px;
   padding: 40px;
-  width: 1000px;
+  max-width: 1000px; /* الحد الأقصى للعرض */
+  width: 90%; /* تناسب مع الشاشة */
   margin: 0 auto;
   color: white;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .unique-form-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* تفعيل التفاف العناصر */
   justify-content: space-between;
   margin-bottom: 20px;
-  gap: 40px;
+  gap: 20px; /* تقليل المسافات بين الحقول */
   border-radius: 15px;
 }
 
@@ -32,8 +35,8 @@
   outline: none;
   transition: border-color 0.3s ease;
   border-radius: 15px;
+  min-width: 250px; /* ضمان عرض مناسب للحقول */
 }
-
 
 .unique-contact-textarea {
   height: 150px;
@@ -47,7 +50,7 @@
 }
 
 .unique-button {
-  background-color: #AF621B;
+  background-color: #af621b;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -71,18 +74,58 @@
   font-size: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 668px) {
+/* تصميم استجابة للشاشات الصغيرة (أقل من 768px) */
+@media (max-width: 768px) {
+  .unique-contact-form {
+    padding: 20px; /* تقليل الهوامش */
+  }
+
   .unique-form-row {
-      flex-direction: column;
+    flex-direction: column; /* ترتيب الحقول عمودياً */
+    gap: 10px; /* تقليل المسافات بين الحقول */
   }
 
   .unique-form-row input,
   .unique-form-row textarea {
-      margin: 5px 0;
+    width: 100%; /* جعل الحقول تأخذ عرض الحاوية بالكامل */
+    font-size: 14px; /* تصغير حجم الخط قليلاً */
+  }
+
+  .unique-contact-textarea {
+    height: 120px; /* تقليل ارتفاع مربع النص */
   }
 
   .unique-button {
-      width: 100%;
+    width: 100%; /* جعل الزر يأخذ العرض الكامل */
+    font-size: 16px; /* تصغير حجم النص في الزر */
+    padding: 12px; /* زيادة الهوامش قليلاً */
   }
 }
+
+/* تصميم استجابة للشاشات الأصغر من 480px */
+@media (max-width: 480px) {
+  .unique-contact-form {
+    padding: 15px; /* تقليل الهوامش أكثر */
+  }
+
+  .unique-form-row input,
+  .unique-form-row textarea {
+    font-size: 12px; /* تقليل حجم النص */
+    padding: 8px; /* تقليل الهوامش الداخلية */
+  }
+
+  .unique-contact-textarea {
+    height: 100px; /* تقليل ارتفاع مربع النص */
+  }
+
+  .unique-button {
+    font-size: 14px; /* تصغير حجم النص أكثر */
+    padding: 10px; /* تقليل الهوامش قليلاً */
+  }
+
+  .status-message {
+    font-size: 0.9rem; /* تصغير حجم رسالة الحالة */
+  }
+}
+
+
