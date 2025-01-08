@@ -311,7 +311,7 @@ margin-top: 130px;}
 }
 
 h1 {
-  font-size: 1.5rem !important; /* Adjust as needed */
+  font-size: 1.5rem !important; 
   max-width: 500px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -320,7 +320,7 @@ h1 {
 .pl {
   text-align: left;
   max-width: 300px;
-  font-size: 0.9rem !important; /* Adjust as needed */
+  font-size: 0.9rem !important; 
   margin-left: 80px;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -328,7 +328,7 @@ h1 {
 
 .hero-content .see-more {
   
-  font-size: 0.8rem !important; /* Adjust as needed */
+  font-size: 0.8rem !important; 
 
   
 }
