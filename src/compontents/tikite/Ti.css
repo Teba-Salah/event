@@ -35,12 +35,14 @@
   padding: 50px 20px;
   min-height: 50vh;
   margin-top: 430px;
-  
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center; 
 }
 
 .event-text {
   display: flex;
-  flex-direction: column; /* Ensures the heading and paragraph stack */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -97,24 +99,24 @@ input:focus, textarea:focus {
   box-shadow: 0 0 5px #bd6b1f; }
 .ff{height: 40px;}
 
-/* استجابة لعرض الشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .background-image {
-    height: 30vh; /* تقليل ارتفاع الصورة */
+    height: 30vh; 
   }
 
   .content {
-    top: 45%; /* تعديل الموضع النسبي */
-    padding: 15px; /* تقليل المسافة الداخلية */
+    top: 45%; 
+    padding: 15px; 
   }
 
   .event-banner {
     padding: 20px;
-    min-height: 30vh; /* تقليل الارتفاع النسبي */
+    min-height: 30vh; 
   }
 
   .event-text h1 {
-    font-size: 1.2rem; /* تقليل حجم النص */
+    font-size: 1.2rem; 
   }
 
   .event-text p {
@@ -123,20 +125,20 @@ input:focus, textarea:focus {
 
   .event-signup input {
     font-size: 0.9rem;
-    padding: 8px; /* تقليل المساحة الداخلية */
+    padding: 8px; 
   }
 
   .event-signup button {
     font-size: 0.9rem;
-    padding: 8px 15px; /* تقليل حجم الزر */
+    padding: 8px 15px; 
   }
 }
 
-/* استجابة لعرض شاشات الموبايل الصغيرة جدًا */
+
 @media (max-width: 480px) {
   
   .background-image {
-    height: 40%;
+    height: 20vh;
   }
   
   .content {
@@ -154,18 +156,18 @@ input:focus, textarea:focus {
 
 .event-text {
   display: flex;
-  flex-direction: column; /* Ensures the heading and paragraph stack */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
 
 .event-text h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0; 
 }
 
 .event-text p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-top: 10px;
   margin-left: 0px;
 }
@@ -179,7 +181,7 @@ input:focus, textarea:focus {
 
 .event-signup input {
   padding: 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 10px;
   width: 250px;
   max-width: 90%;
@@ -197,6 +199,9 @@ input:focus, textarea:focus {
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 120px;
+  font-size :0.8rem;
+  height:30px;
 }
 
 .event-signup button:hover {
@@ -209,5 +214,6 @@ input:focus, textarea:focus {
   outline: none; 
   border: 2px solid #AF621B; 
   box-shadow: 0 0 5px #bd6b1f; }
-.ff{height: 40px;}
+
+.event-banner{margin-top:410px;}
 }

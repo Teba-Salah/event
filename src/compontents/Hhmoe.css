@@ -306,12 +306,10 @@ margin-top: 130px;}
   height: 400px;
 
 }
-.about-section .pkj {
-  font-size: 0.8em;
-}
+
 
 h1 {
-  font-size: 1.5rem !important; 
+  font-size: 1.5rem !important;
   max-width: 500px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -320,19 +318,29 @@ h1 {
 .pl {
   text-align: left;
   max-width: 300px;
-  font-size: 0.9rem !important; 
+  font-size: 0.9rem !important;
   margin-left: 80px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .hero-content .see-more {
-  
   font-size: 0.8rem !important; 
 
   
 }
 
-}
+.hh2 {
+  margin-left:9px;
+font-size: 24px;}
 
-  
+  .about-section .pkj {
+    font-size: 0.8em;
+    margin-left:9px;
+    margin-top:-10px;
+    
+  }
+  .get-started{
+    margin-left:9px;
+  }
+}

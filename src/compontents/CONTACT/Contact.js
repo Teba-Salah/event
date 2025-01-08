@@ -7,8 +7,8 @@ const ContactSection = () => {
     <div>
     <section className="contact-section">
       <div className="overlay">
-        <h1>GET IN TOUCH</h1>
-        <p>
+        <h1 className='h1conta'>GET IN TOUCH</h1>
+        <p className='pconta'>
           We'd love to hear from you! If you have any questions, comments, or feedback, please don't hesitate to get in touch with us using the contact form below. 
           We'll do our best to get back to you as soon as possible. Thank you for your interest in Eventify! We look forward to hearing from you.
         </p>

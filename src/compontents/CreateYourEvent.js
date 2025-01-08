@@ -11,11 +11,10 @@ const EventForm = () => {
     speakerName: "",
     speakerBio: "",
     speakerEmail: "",
-    relatedEventTitle: "",
-    relatedEventDate: "",
-    relatedEventLocation: "",
     eventImage: null,
   });
+
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,154 +27,153 @@ const EventForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formDataToSend = new FormData();
 
-    for (const key in formData) {
-      if (key !== "eventImage") {
-        formDataToSend.append(key, formData[key]);
-      }
+    const {
+      eventTitle,
+      eventDescription,
+      startDate,
+      startTime,
+      location,
+      speakerName,
+      speakerBio,
+      speakerEmail,
+    } = formData;
+
+    if (
+      !eventTitle ||
+      !eventDescription ||
+      !startDate ||
+      !startTime ||
+      !location ||
+      !speakerName ||
+      !speakerBio ||
+      !speakerEmail
+    ) {
+      setStatus("Please fill out all required fields.");
+      return;
     }
 
-    if (formData.eventImage) {
-      formDataToSend.append("eventImage", formData.eventImage);
-    }
-
-    fetch("https://your-backend-url.com/api/events", {
-      method: "POST",
-      body: formDataToSend,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+    console.log(formData);
+    setStatus(" ");
+    setFormData({
+      eventTitle: "",
+      eventDescription: "",
+      startDate: "",
+      startTime: "",
+      location: "",
+      speakerName: "",
+      speakerBio: "",
+      speakerEmail: "",
+      eventImage: null,
+    });
   };
 
   return (
-    <form onSubmit={handleSubmit} className="special-event-form">
+    <form className="unique-contact-form" onSubmit={handleSubmit}>
       <h2 className="eventform">Event Form</h2>
 
-      <div className="special-form-group">
-        <label>Event Title</label>
+      <div className="unique-form-row">
         <input
           type="text"
           name="eventTitle"
+          placeholder="Event Title"
           value={formData.eventTitle}
           onChange={handleChange}
-          className="special-form-input"
-          placeholder="Enter event title"
           required
         />
       </div>
 
-      <div className="special-form-group">
-        <label>Event Description</label>
+      <div className="unique-form-row">
         <textarea
           name="eventDescription"
+          className="unique-contact-textarea"
+          placeholder="Event Description"
           value={formData.eventDescription}
           onChange={handleChange}
-          className="special-form-textarea"
-          placeholder="Enter event description"
           required
-        />
+        ></textarea>
       </div>
 
-      <div className="special-form-group">
-        <label>Start Date</label>
+      <div className="unique-form-row">
         <input
           type="date"
           name="startDate"
           value={formData.startDate}
           onChange={handleChange}
-          className="special-form-input"
           required
         />
       </div>
 
-      <div className="special-form-group">
-        <label>Start Time</label>
+      <div className="unique-form-row">
         <input
           type="time"
           name="startTime"
           value={formData.startTime}
           onChange={handleChange}
-          className="special-form-input"
           required
         />
       </div>
 
-      <div className="special-form-group">
-        <label>Location</label>
+      <div className="unique-form-row">
         <input
           type="text"
           name="location"
+          placeholder="Location"
           value={formData.location}
           onChange={handleChange}
-          className="special-form-input"
-          placeholder="Enter location"
           required
         />
       </div>
 
-      <div className="special-form-group">
-        <label>Speaker Name</label>
+      <div className="unique-form-row">
         <input
           type="text"
           name="speakerName"
+          placeholder="Speaker Name"
           value={formData.speakerName}
           onChange={handleChange}
-          className="special-form-input"
-          placeholder="Enter speaker's name"
           required
         />
       </div>
 
-      <div className="special-form-group">
-        <label>Speaker Bio</label>
+      <div className="unique-form-row">
         <textarea
           name="speakerBio"
+          className="unique-contact-textarea"
+          placeholder="Speaker Bio"
           value={formData.speakerBio}
           onChange={handleChange}
-          className="special-form-textarea"
-          placeholder="Enter speaker's bio"
           required
-        />
+        ></textarea>
       </div>
 
-      <div className="special-form-group">
-        <label>Speaker Email</label>
+      <div className="unique-form-row">
         <input
           type="email"
           name="speakerEmail"
+          placeholder="Speaker Email"
           value={formData.speakerEmail}
           onChange={handleChange}
-          className="special-form-input"
-          placeholder="Enter speaker's email"
           required
         />
       </div>
 
-
-     
-
-
-      <div className="special-form-group special-file-upload">
-        <label>Event Image</label>
+      <div className="unique-form-row">
         <input
           type="file"
           name="eventImage"
           onChange={handleFileChange}
-          className="special-form-file"
           accept="image/*"
         />
       </div>
 
-      <button type="submit" className="special-form-button">Submit</button>
+      <button type="submit" className="unique-button">
+        Submit
+      </button>
+
+      {status && <p className="status-message">{status}</p>}
     </form>
   );
 };
 
 export default EventForm;
-

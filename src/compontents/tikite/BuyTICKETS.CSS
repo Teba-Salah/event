@@ -6,6 +6,7 @@
   padding: 20px;
   margin-bottom: 400px;
   flex-wrap: wrap; 
+  background-size: cover;
 }
 
 .ticket-container {
@@ -53,53 +54,58 @@
   background-color: #8a582c;
 }
 
-/* Media Query for tablets and mobile devices */
+
 @media (max-width: 768px) {
+  .App {margin-bottom:500px;}
   .ticket-container {
     justify-content: center;
-    gap: 10px; /* تقليص الفجوات بين البطاقات */
+    gap: 10px; 
   }
 
   .card {
-    flex: 1 1 calc(50% - 10px); /* تغيير الحجم ليشغل نصف العرض على الأجهزة المتوسطة */
-    max-width: 350px; /* تقليص الحد الأقصى للعرض */
+    flex: 1 1 calc(50% - 10px);
+    max-width: 350px; 
   }
 
   .card h3 {
-    font-size: 1.3rem; /* تقليص حجم النص */
+    font-size: 1.5rem;
   }
 
   .card p {
-    font-size: 0.9rem; /* تقليص حجم النص في الوصف */
+    font-size: 0.9rem; 
   }
 
   .card button {
-    font-size: 0.9rem; /* تقليص حجم الخط في الأزرار */
+    font-size: 0.9rem; 
   }
 }
-
-/* Media Query for mobile devices */
 @media (max-width: 480px) {
   .ticket-container {
     justify-content: center;
     gap: 10px;
+   margin-top:-300px;
   }
 
   .card {
     flex: 1 1 calc(100% - 20px); 
-    max-width: 100%; 
+    max-width: 80%; 
   }
 
   .card h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem !important;
+    margin-left:-5px;
   }
 
   .card p {
-    font-size: 0.8rem; 
+    font-size: 0.6rem !important;
+    margin-left:-5px;
   }
 
   .card button {
-    font-size: 0.9rem;
+    font-size: 0.6rem !important;
+    margin-left:-5px;
   }
+
+  
 }
 

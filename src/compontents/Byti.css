@@ -1,201 +1,198 @@
 
 .timer-containert {
-    text-align: center;
-    background-color:#192f4e99;
-    padding: 20px;
-   margin-top: -100px;
-   color: #fff;
+  text-align: center;
+  background-color:#192f4e99;
+  padding: 20px;
+ margin-top: -100px;
+ color: #fff;
 }
 
 .event-title3 { 
-    font-size: 1.5rem;
-    color: #ededed;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #ededed;
+  margin-bottom: 10px;
 }
 
 .event-subtitle {
-    font-size: 2rem;
-    margin: 20px 0;
+  font-size: 2rem;
+  margin: 20px 0;
 }
 
 .timer-display { 
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-    color: #0e1124;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  color: #0e1124;
 }
 
 .event-details {
-    color: #ffffff;
-    display: inline;
-    margin: 100px;
-    text-align: center;
+  color: #ffffff;
+  display: inline;
+  margin: 100px;
+  text-align: center;
 }
 
 .time-segment {
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 
 .time-segment span {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .time-segment p {
-    font-size: 1rem;
-    margin-right: 40px;
-    margin-top: 10px;
-    color: #ffffff;
-    text-align: center;
+  font-size: 1rem;
+  margin-right: 40px;
+  margin-top: 10px;
+  color: #ffffff;
+  text-align: center;
 }
 
 .action-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .event-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .event-details-btn {
-    color: #0e1124;
-    border: 2px solid #0e1124;
-    border-radius: 30px;
-    background-color: #ffffff;
+  color: #0e1124;
+  border: 2px solid #0e1124;
+  border-radius: 30px;
+  background-color: #ffffff;
 }
 
 .event-ticket-btn {
-    background-color: #AF621B;
-    color: #fff;
-    border-radius: 30px;
-    width: 180px;
-    text-align: center;
-    margin-left: -19px;
+  background-color: #AF621B;
+  color: #fff;
+  border-radius: 30px;
+  width: 180px;
+  text-align: center;
+  margin-left: -19px;
 }
 .event-ticket-btn:hover {
-    background-color: #894b12;
+  background-color: #894b12;
 }
 .event-button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
-/* القواعد الأساسية للتصميم تبقى كما هي */
 
-/* Media Queries للأجهزة اللوحية (Tablet) */
 @media (max-width: 768px) {
-  .timer-containert {
-    padding: 15px;
-    margin-top: -50px;
-  }
-
-  .event-title3 {
-    font-size: 1.2rem; /* تقليل حجم العنوان */
-    margin-bottom: 8px;
-  }
-
-  .event-subtitle {
-    font-size: 1.5rem; /* تصغير حجم العنوان الفرعي */
-    margin: 15px 0;
-  }
-
-  .timer-display {
-    flex-direction: column; /* ترتيب الوقت عموديًا */
-    gap: 10px;
-  }
-
-  .time-segment {
-    padding: 15px; /* تقليل الحواف */
-    border-radius: 8px;
-  }
-
-  .time-segment span {
-    font-size: 1.5rem; /* تصغير حجم الأرقام */
-  }
-
-  .time-segment p {
-    font-size: 0.9rem; /* تصغير النص */
-    margin-right: 0; /* إزالة الهامش */
-    margin-top: 5px;
-  }
-
-  .action-buttons {
-    flex-direction: column; /* ترتيب الأزرار عموديًا */
-    gap: 15px;
-    margin-top: 15px;
-  }
-
-  .event-details-btn,
-  .event-ticket-btn {
-    width: 100%; /* اجعل الأزرار تملأ العرض */
-    text-align: center;
-  }
+.timer-containert {
+  padding: 15px;
+  margin-top: -50px;
 }
 
-/* Media Queries للأجهزة الصغيرة (Mobile) */
+.event-title3 {
+  font-size: 1.2rem; 
+  margin-bottom: 8px;
+}
+
+.event-subtitle {
+  font-size: 1.5rem; 
+  margin: 15px 0;
+}
+
+.timer-display {
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.time-segment {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.time-segment span {
+  font-size: 1.5rem; 
+}
+
+.time-segment p {
+  font-size: 0.9rem; 
+  margin-right: 0; 
+  margin-top: 5px;
+}
+
+.action-buttons {
+  flex-direction: column; 
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.event-details-btn,
+.event-ticket-btn {
+  width: 100%; 
+  text-align: center;
+}
+}
+
+
 @media (max-width: 480px) {
-  .timer-containert {
-    padding: 20px;
-    margin-bottom:70px;
-    margin-top:-130px;
-  }
-
-  .event-title3 {
-    font-size: 1rem; /* تقليل حجم العنوان */
-  }
-
-  .event-subtitle {
-    font-size: 1.2rem; /* تقليل حجم العنوان الفرعي */
-    margin: 10px 0;
-  }
-
-  .timer-display {
-    gap: 5px;
-  }
-
-  .time-segment {
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  .time-segment span {
-    font-size: 1.2rem;
-  }
-
-  .time-segment p {
-    font-size: 0.8rem;
-    transform: translateX(-25px);
-  }
-
-  .event-details {
-    margin: 10px; /* تقليل الهوامش */
-    font-size: 0.9rem; /* تقليل حجم النص */
-  }
-
-  .action-buttons {
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-  .event-details-btn,
-  .event-ticket-btn {
-    width: 40%;
-    font-size: 0.9rem; /* تقليل حجم النص في الأزرار */
-    padding: 8px;
-    transform: translateX(130px);
-  }
+.timer-containert {
+  padding: 20px;
+  margin-bottom:70px;
+  margin-top:-130px;
 }
 
+.event-title3 {
+  font-size: 1rem;
+}
+
+.event-subtitle {
+  font-size: 1.2rem; 
+  margin: 10px 0;
+}
+
+.timer-display {
+  gap: 5px;
+}
+
+.time-segment {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.time-segment span {
+  font-size: 1.2rem;
+}
+
+.time-segment p {
+  font-size: 0.8rem;
+  transform: translateX(-25px);
+}
+
+.event-details {
+  margin: 10px; 
+  font-size: 0.9rem; 
+}
+
+.action-buttons {
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.event-details-btn,
+.event-ticket-btn {
+  width: 40%;
+  font-size: 0.9rem; 
+  padding: 8px;
+  transform: translateX(130px);
+}
+}

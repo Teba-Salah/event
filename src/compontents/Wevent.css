@@ -120,7 +120,7 @@
   border: none;
   padding: 15px;
   margin-top: -10px;
-  transform: translateX(-195px); /* التحريك لليسار */
+  transform: translateX(-195px); 
 }
 
 .unique-slider-controls1 button:hover {
@@ -182,56 +182,6 @@
 
 @media (max-width: 480px) {
   .unique-slider {
-    flex-direction: column; 
-    padding: 40px;
-    margin: 10px auto;
-    gap: 10px;
-  }
-
-  .unique-event-image {
-    width: 90%;
-    height: 300px; 
-    border-radius:10px;
-  }
-
-  .unique-date-circle {
-    width: 50px; /* تصغير الدائرة أكثر */
-    height: 50px;
-    font-size: 0.5em;
-    margin-right: 10px;
-   
-  }
-
-  .unique-event-title {
-  font-size: 0.7em;
-  max-width: 300px;
-  word-spacing: -4px; /* Adjust the spacing between words */
-  letter-spacing: 0; /* Ensure no extra letter spacing */
-  text-align: center; /* Align text if necessary */
-  }
-
-  .unique-event-details {
-    font-size: 0.6em;
-  }
-
-  .unique-buy-button4 {
-    padding: 7px 6px;
-    font-size: 0.7em;
-  }
-
-  .unique-slider-controls1 button {
-    font-size: 0.8em;
-    transform: translateX(-10px);
-  }
-  
-  .unique-buy-button4 {
-    width: 50%; 
-    margin-top: 7px;
-  }
-
-}
-@media (max-width: 480px) {
-  .unique-slider {
     flex-direction: column;
     padding: 40px;
     margin: 10px auto;
@@ -241,18 +191,18 @@
   .unique-event-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-aligns the content */
-    justify-content: space-between; /* Ensures even spacing */
-    min-height: 500px; /* Fixes consistent height for all events */
-    max-width: 90%; /* Keeps it responsive */
-    margin: 0 auto; /* Centers the container on the screen */
+    align-items: center; 
+    justify-content: space-between; 
+    min-height: 500px; 
+    max-width: 90%; 
+    margin: 0 auto; 
   }
 
   .unique-event-image {
     width: 90%;
     height: 300px;
     border-radius: 10px;
-    object-fit: cover; /* Ensures the image scales properly */
+    object-fit: cover;
   }
 
   .unique-date-circle {
@@ -268,25 +218,47 @@
     word-spacing: -4px;
     letter-spacing: 0;
     text-align: center;
-    margin: 10px 0; /* Adds consistent spacing */
+    margin: 10px 0; 
   }
 
   .unique-event-details {
     font-size: 0.6em;
-    text-align: center; /* Keeps details centered */
-    margin-bottom: 10px; /* Adds space below the details */
+    text-align: center;
+    margin-bottom: 10px; 
   }
+
 
   .unique-buy-button4 {
-    width: 50%; /* Ensures all buttons have the same width */
+    width: 40%; 
     padding: 7px 6px;
     font-size: 0.7em;
-    margin-top: 20px; /* Adds spacing above the button */
+    margin-top: 3px; 
   }
 
-  .unique-slider-controls1 button {
-    font-size: 0.8em;
-    transform: translateX(-10px);
-  }
+
+.unique-t{margin-left: -177px;
+          font-size:24px;}
+
+.unique-slider-controls1 button {
+  font-size: 0.8em;
+  transform: translateX(-60px);
+  width: 25px;
+  height:25px; 
+  border: 2px solid #ffffffdd; 
+  border-radius: 50%; 
+  margin-right: 10px;
+  margin-top: -20px;
+  color: #ffffff;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin-bottom:20px;
 }
+
+.unique-slider-controls1 button:hover {
+  background-color: #AF621B; 
+  color: white; 
+  border-color: #AF621B; 
+}
+}
+
 
