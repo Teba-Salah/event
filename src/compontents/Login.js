@@ -54,6 +54,7 @@ const Login = () => {
             />
             {!isUsernameTyping && <FaUserAlt className='icon' />} 
           </div>
+
           <div className="input-box">
             <input 
               type="password" 
@@ -61,14 +62,17 @@ const Login = () => {
               value={password} 
               onChange={handlePasswordChange}  
               required 
-            />
-            {!isPasswordTyping && <FaLock className='icon2' />} 
+          />
+          {!isPasswordTyping && <FaLock className='icon2' />} 
           </div>
+
           {error && <h5 className='error-message'>{error}</h5>}
+
           <div className="remember-forgot">
             <label><input type="checkbox" /> Remember me</label>
             <a href="#">Forgot password?</a>
           </div>
+
           <button type="submit">Login</button>
           <div className="register-linkss">
             <p >Don't have an account?  <Link to="/Signup" className='singgg'> Sign in</Link></p>

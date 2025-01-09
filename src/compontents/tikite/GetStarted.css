@@ -126,19 +126,19 @@ input[type="password"]
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .form-card {
-    margin: 20px; /* Reduce margins for smaller screens */
-    height: auto; /* Let the height adjust dynamically */
+    margin: 20px; 
+    height: auto; 
     margin-top: 80px;
-    max-width: 90%; /* Adjust width */
+    max-width: 90%; 
   }
 
   .inputtikit {
-    font-size: 0.9rem; /* Adjust font size */
+    font-size: 0.9rem; 
     padding: 8px;
   }
 
   .submit-button {
-    font-size: 1rem; /* Adjust button size */
+    font-size: 1rem; 
     margin-left: 0; 
   }
 

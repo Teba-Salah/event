@@ -44,7 +44,7 @@
 }
 
 .FeatureIcon {
-  font-size: 3rem; /* Adjust icon size */
+  font-size: 3rem; 
   color:z#c1820d;
 }
 
@@ -174,7 +174,7 @@
 /* Overlay styling */
 .SpeakerOverlay {
   position: absolute;
-  bottom: -50px; /* Start hidden below the image */
+  bottom: -50px; 
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.195);
@@ -236,6 +236,12 @@ margin-left: 30px;}
 }
 
 @media (max-width: 480px) {
+
+  .backgrounddd {
+    max-height: 30vh;
+}
+
+
   .FeaturesLeft h2 {
     font-size: 1rem;
     transform: translateX(40px);

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { FaLightbulb, FaHandsHelping, FaAward } from "react-icons/fa"; // استيراد الأيقونات الجديدة
+import { FaLightbulb, FaHandsHelping, FaAward } from "react-icons/fa"; 
 import './About.css';
 import Eventimage from './imges/about (1).png'; 
 import Aboutnm from "./Aboutnum";

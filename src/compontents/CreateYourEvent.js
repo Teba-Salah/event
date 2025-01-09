@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./CreateYourEvent.css";
 
 const EventForm = () => {
@@ -14,7 +14,8 @@ const EventForm = () => {
     eventImage: null,
   });
 
-  const [status, setStatus] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const fileInputRef = useRef(null); // Reference for the image input field
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,33 +29,13 @@ const EventForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const {
-      eventTitle,
-      eventDescription,
-      startDate,
-      startTime,
-      location,
-      speakerName,
-      speakerBio,
-      speakerEmail,
-    } = formData;
+    // Log the submitted data
+    console.log("Form data submitted:", formData);
 
-    if (
-      !eventTitle ||
-      !eventDescription ||
-      !startDate ||
-      !startTime ||
-      !location ||
-      !speakerName ||
-      !speakerBio ||
-      !speakerEmail
-    ) {
-      setStatus("Please fill out all required fields.");
-      return;
-    }
+    // Disable the form after submission
+    setIsSubmitted(true);
 
-    console.log(formData);
-    setStatus(" ");
+    // Reset the form fields after submission
     setFormData({
       eventTitle: "",
       eventDescription: "",
@@ -66,13 +47,19 @@ const EventForm = () => {
       speakerEmail: "",
       eventImage: null,
     });
+
+    // Reset the image input field
+    if (fileInputRef.current) {
+      fileInputRef.current.value = null;
+    }
   };
 
   return (
-    <form className="unique-contact-form" onSubmit={handleSubmit}>
+    <form className="special-event-form" onSubmit={handleSubmit}>
       <h2 className="eventform">Event Form</h2>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Event Title</label>
         <input
           type="text"
           name="eventTitle"
@@ -80,41 +67,52 @@ const EventForm = () => {
           value={formData.eventTitle}
           onChange={handleChange}
           required
+          className="special-form-input"
+          disabled={isSubmitted}
         />
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Event Description</label>
         <textarea
           name="eventDescription"
-          className="unique-contact-textarea"
+          className="special-form-textarea"
           placeholder="Event Description"
           value={formData.eventDescription}
           onChange={handleChange}
           required
+          disabled={isSubmitted}
         ></textarea>
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Start Date</label>
         <input
           type="date"
           name="startDate"
           value={formData.startDate}
           onChange={handleChange}
           required
+          className="special-form-input"
+          disabled={isSubmitted}
         />
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Start Time</label>
         <input
           type="time"
           name="startTime"
           value={formData.startTime}
           onChange={handleChange}
           required
+          className="special-form-input"
+          disabled={isSubmitted}
         />
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Location</label>
         <input
           type="text"
           name="location"
@@ -122,10 +120,13 @@ const EventForm = () => {
           value={formData.location}
           onChange={handleChange}
           required
+          className="special-form-input"
+          disabled={isSubmitted}
         />
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Speaker Name</label>
         <input
           type="text"
           name="speakerName"
@@ -133,21 +134,26 @@ const EventForm = () => {
           value={formData.speakerName}
           onChange={handleChange}
           required
+          className="special-form-input"
+          disabled={isSubmitted}
         />
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Speaker Bio</label>
         <textarea
           name="speakerBio"
-          className="unique-contact-textarea"
+          className="special-form-textarea"
           placeholder="Speaker Bio"
           value={formData.speakerBio}
           onChange={handleChange}
           required
+          disabled={isSubmitted}
         ></textarea>
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Speaker Email</label>
         <input
           type="email"
           name="speakerEmail"
@@ -155,23 +161,28 @@ const EventForm = () => {
           value={formData.speakerEmail}
           onChange={handleChange}
           required
+          className="special-form-input"
+          disabled={isSubmitted}
         />
       </div>
 
-      <div className="unique-form-row">
+      <div className="special-form-group">
+        <label>Speaker Image</label>
         <input
           type="file"
           name="eventImage"
+          ref={fileInputRef}
           onChange={handleFileChange}
           accept="image/*"
+          required
+          className="special-form-file"
+          disabled={isSubmitted}
         />
       </div>
 
-      <button type="submit" className="unique-button">
-        Submit
+      <button type="submit" className="special-form-button" disabled={isSubmitted}>
+        {isSubmitted ? "Submitted" : "Submit"}
       </button>
-
-      {status && <p className="status-message">{status}</p>}
     </form>
   );
 };

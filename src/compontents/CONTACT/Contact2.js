@@ -78,7 +78,7 @@ const UniqueContactForm = () => {
         />
       </div>
       <div className="unique-form-row">
-        <textarea
+        <textarea 
           name="message"
           className="unique-contact-textarea"
           placeholder="Message/Questions"

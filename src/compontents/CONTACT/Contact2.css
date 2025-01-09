@@ -17,6 +17,7 @@
   margin-bottom: 20px;
   gap: 20px; 
   border-radius: 15px;
+
 }
 
 .unique-form-row input,
@@ -45,6 +46,7 @@
   color: #ffffff;
   resize: none;
   border-radius: 15px;
+
 }
 
 .unique-button {
@@ -72,21 +74,21 @@
   font-size: 1rem;
 }
 
-/* تصميم استجابة للشاشات الصغيرة (أقل من 768px) */
+
 @media (max-width: 768px) {
   .unique-contact-form {
-    padding: 20px; /* تقليل الهوامش */
+    padding: 25px; 
   }
 
   .unique-form-row {
-    flex-direction: column; /* ترتيب الحقول عمودياً */
-    gap: 10px; /* تقليل المسافات بين الحقول */
+    flex-direction: column; 
+    gap: 10px; 
   }
 
   .unique-form-row input,
   .unique-form-row textarea {
-    width: 100%; /* جعل الحقول تأخذ عرض الحاوية بالكامل */
-    font-size: 14px; /* تصغير حجم الخط قليلاً */
+    width: 97%; 
+    font-size: 12px; /* تصغير حجم الخط قليلاً */
   }
 
   .unique-contact-textarea {
@@ -94,9 +96,12 @@
   }
 
   .unique-button {
-    width: 100%; /* جعل الزر يأخذ العرض الكامل */
-    font-size: 16px; /* تصغير حجم النص في الزر */
-    padding: 12px; /* زيادة الهوامش قليلاً */
+    width: 30%; /* جعل الزر يأخذ العرض الكامل */
+    font-size: 12px; /* تصغير حجم النص في الزر */
+    padding: 15px; /* زيادة الهوامش قليلاً */
+    display: flex;
+    text-align: center;
+    
   }
 }
 
@@ -117,12 +122,15 @@
   }
 
   .unique-button {
-    font-size: 14px; /* تصغير حجم النص أكثر */
-    padding: 10px; /* تقليل الهوامش قليلاً */
+    font-size: 12px; /* تصغير حجم النص أكثر */
+    padding: 5px; /* تقليل الهوامش قليلاً */
+    margin-left:120px;
+    max-width:80px ;
+    justify-content: center;
   }
 
   .status-message {
-    font-size: 0.9rem; /* تصغير حجم رسالة الحالة */
+    font-size: 0.8rem; /* تصغير حجم رسالة الحالة */
   }
 }
 
