@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './GetStarted.css'; // Import the CSS file
+import './GetStarted.css'; 
 import FGHC from '../imges/abkl.png';
 
 const FormPage = () => {
@@ -19,7 +19,7 @@ const FormPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Add form submission logic here
+  
   };
 
   return (
@@ -28,8 +28,8 @@ const FormPage = () => {
     <div className="form-container">
       <div className="form-card">
         <form onSubmit={handleSubmit}>
-
-        <label>Event Title</label>
+ 
+        <label className='labelget'>Type the event name</label>
           <input className='inputtikit'
             type="text"
             name="eventName"
@@ -38,25 +38,34 @@ const FormPage = () => {
             onChange={handleInputChange}
             required
           />
-           <label>Event Title</label>
-          <input className='inputtikit'
-            type="number"
-            name="tickets"
-            placeholder="Number of tickets"
-            value={formData.tickets}
-            onChange={handleInputChange}
-            required
-          />
-           <label>Event Title</label>
+           <label className='labelget' >Number of tickets</label>
+           <input
+  className="inputtikit"
+  type="number"
+  name="tickets"
+  placeholder="Number of tickets"
+  value={formData.tickets}
+  onChange={(e) => {
+    const value = e.target.value;
+   
+    if (/^\d*$/.test(value)) {
+      handleInputChange(e); 
+    }
+  }}
+  min="1" // الحد الأدنى للتذاكر 1
+  required
+/>
+
+           <label className='labelget'>Your number</label>
           <input input className='inputtikit'
             type="tel"
             name="phoneNumber"
             placeholder="Your number"
             value={formData.phoneNumber}
             onChange={handleInputChange}
-            required
+            
           />
-           <label>Event Title</label>
+           <label className='labelget'>enter your email</label>
           <input input className='inputtikit'
             type="email"
             name="email"
@@ -75,7 +84,7 @@ const FormPage = () => {
                 onChange={handleInputChange}
                 required
               />
-              Credit Card </label>
+                Credit Card </label>
             <label>
               <input input className='inputtikit23'
                 type="radio"

@@ -29,7 +29,7 @@ export function Hhmoe(props) {
           <h1>The Ultimate Platform for Planning and Promoting Successful Events</h1>
           <p className='pl'>Eventify is a leading event and conference website that brings together industry experts, thought leaders, and enthusiasts from around the world to share knowledge, network, and make lasting connections.</p>
           <a className="see-more">
-  <Link to="/About" className="link-text"> See more about us  →</Link>
+  <Link to="/About" > See more about us  →</Link>
 </a>
         </div>
       </div>

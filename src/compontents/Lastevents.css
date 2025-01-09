@@ -116,14 +116,14 @@
     }
   
     .slide img {
-      width: 16rem;
+      width: 17rem;
       margin-bottom: 20px;
     }
   
     .Laste_Events {
       bottom: 400px; 
-      left: 15px; 
-      font-size: 1.5rem; 
+      left:-5px; 
+      font-size:18px; 
     }
   
     .arrow {
@@ -146,9 +146,8 @@
       font-size: 10px;
     }
     .video-slide {
-      width: 100%;
-      max-width: 1000px; 
-      height: auto; 
+      width: 80%; 
+      height: 400px; 
       margin: 0 auto;
     }
   }

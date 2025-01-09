@@ -53,7 +53,7 @@ const EventSlider = () => {
     setCurrentSlide((prev) => (prev - 1 + events.length) % events.length);
   };
 
-  const { date, title, details, image } = events[currentSlide];
+  const { title, details, image } = events[currentSlide];
 
   const checkVisibility = () => {
     const rect = sliderRef.current.getBoundingClientRect();
@@ -74,7 +74,7 @@ const EventSlider = () => {
       <div className="unique-event-info">
         <h2 className='unique-t'>EVENT</h2>
         <div className="unique-event-item">
-          <div className="unique-date-circle">{date}</div>
+    
           <div className="unique-event-content">
             <h3 className="unique-event-title1">{title}</h3>
             <ul className="unique-event-details">

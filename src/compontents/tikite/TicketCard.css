@@ -1,4 +1,4 @@
-/* App.css */
+
 .App {
     display: flex;
     justify-content: center;
@@ -79,42 +79,40 @@
     background-color: #9b5819;
   }
   
- /* للشاشات المتوسطة (تابلت) */
+ 
 @media (max-width: 768px) {
   .ticket-container {
-      justify-content: center; /* توسيط الكروت */
+      justify-content: center; 
   }
 
   .ticket-card {
-      flex: 1 1 calc(45% - 30px); /* عرض كرتين في الصف */
+      flex: 1 1 calc(45% - 30px); 
       max-width: 400px;
   }
 }
-
-/* للشاشات الصغيرة جدًا (موبايل) */
 @media (max-width: 480px) {
   .App {
     margin-top: -700px;
 }
   .ticket-container {
-      gap: 15px; /* تقليل المسافة بين الكروت */
+      gap: 15px; 
   }
 
   .ticket-card {
-      flex: 1 1 100%; /* عرض الكرت بعرض الشاشة */
+      flex: 1 1 100%; 
       width: 100%;
       max-width: 100%;
     
   }
 
   .ticket-card h2 {
-      font-size: 0.8rem; /* تصغير الخط */
+      font-size: 0.8rem; 
       text-align: center;
     
   }
 
   .ticket-card button {
-      font-size: 0.6rem; /* تصغير حجم الزر */
+      font-size: 0.6rem; 
       padding: 8px 15px;
   }
   

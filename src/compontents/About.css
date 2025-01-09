@@ -185,12 +185,13 @@
 }
 
 .SpeakerCard:hover .SpeakerOverlay {
-  bottom: 0; /* Move up to reveal the name */
+  bottom: 0; 
 }
 .speaker22{display: flex;
 margin-left: 30px;}
 
-/* Responsive Design */
+
+
 @media (max-width: 1024px) {
   .EventFeatures {
     flex-direction: column;

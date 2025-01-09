@@ -43,21 +43,6 @@
   margin-bottom: 20px;
 }
 
-.unique-date-circle {
-  width: 80px;
-  height: 80px;
-  background-color: #0b1a30;
-  color: #fff;
-  border: 2px solid #63aeff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
-  font-weight: bold;
-  margin-right: 10px;
-  text-align: center;
-}
 
 .unique-event-content {
   display: flex;
@@ -123,11 +108,32 @@
   transform: translateX(-195px); 
 }
 
-.unique-slider-controls1 button:hover {
-  color: #AF621B;
-  background-color:#0b1a3000;
+
+.unique-slider-controls1 button {
+  font-size: 1.5em;
+  padding: 15px;
+  margin-top: -10px;
+  transform: translateX(-275px); 
+  width: 25px;
+  height:25px; 
+  border: 2px solid #ffffffdd; 
+  border-radius: 50%; 
+  margin-right: 10px;
+  margin-top: -20px;
+  color: #ffffff;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin-bottom:20px;
+  display: flex; /* لتفعيل flexbox */
+  align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+  justify-content: center; 
 }
 
+.unique-slider-controls1 button:hover {
+  background-color: #AF621B; 
+  color: white; 
+  border-color: #AF621B; 
+}
 
 @media (max-width: 768px) {
   .unique-slider {
@@ -147,13 +153,6 @@
   .unique-event-info {
     align-items: center; 
     text-align: center;
-  }
-
-  .unique-date-circle {
-    width: 60px; 
-    height: 60px;
-    font-size: 0.8em; 
-    margin: 0 auto 10px auto; 
   }
 
   .unique-event-title {
@@ -205,12 +204,6 @@
     object-fit: cover;
   }
 
-  .unique-date-circle {
-    width: 50px;
-    height: 50px;
-    font-size: 0.5em;
-    margin-right: 10px;
-  }
 
   .unique-event-title {
     font-size: 0.7em;
@@ -236,22 +229,13 @@
   }
 
 
-.unique-t{margin-left: -177px;
+.unique-t{margin-left: -225px;
           font-size:24px;}
 
 .unique-slider-controls1 button {
   font-size: 0.8em;
-  transform: translateX(-60px);
-  width: 25px;
-  height:25px; 
-  border: 2px solid #ffffffdd; 
-  border-radius: 50%; 
-  margin-right: 10px;
-  margin-top: -20px;
-  color: #ffffff;
-  cursor: pointer; 
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  margin-bottom:20px;
+  transform: translateX(-120px);
+  
 }
 
 .unique-slider-controls1 button:hover {
@@ -259,6 +243,7 @@
   color: white; 
   border-color: #AF621B; 
 }
+.unique-event-content{transform: translateX(-35px);}
 }
 
 

@@ -13,7 +13,7 @@ function EventStatistics() {
     <section className="EventStatistics" id="EventStatistics">
       {stats.map((stat, index) => (
         <div className="SingleStat" key={index}>
-          <h3 className="stabout">{stat.target}</h3> {/* Displaying the number directly */}
+          <h3 className="stabout">{stat.target}</h3> 
           <p className="stabout">{stat.label}</p>
         </div>
       ))}

@@ -22,7 +22,7 @@
   position: relative;
 }
 
-/* شريط المعلومات السفلي */
+
 .info-footer {
   position: absolute;
   bottom: 0;
@@ -30,11 +30,11 @@
   right: 0;
   display: flex;
   justify-content: space-around;
-  background-color: #bf6a1b86; /* لون نصف شفاف */
+  background-color: #bf6a1b86; 
   padding: 16px;
   height: auto;
   gap: 10px;
-  flex-wrap: wrap; /* تفعيل التفاف العناصر */
+  flex-wrap: wrap;
   z-index: 1000;
 }
 
@@ -54,47 +54,46 @@
   color: #fff;
 }
 
-/* استجابة للشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .leaflet-map {
-    height: 500px; /* تقليل ارتفاع الخريطة */
+    height: 500px; 
   }
 
   .info-footer {
-    flex-direction: column; /* جعل العناصر عمودية */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    gap: 5px; /* تقليل الفجوات بين العناصر */
+    gap: 5px; 
     padding: 10px;
   }
 
   .info-footer div {
-    width: 100%; /* جعل العناصر تأخذ العرض الكامل */
-    max-width: 300px; /* الحد الأقصى للعرض */
+    width: 100%; 
+    max-width: 300px; 
   }
 
   .info-footer strong {
-    font-size: 0.7rem; /* تصغير النص */
+    font-size: 0.7rem;
   }
 
   .info-footer p {
-    font-size: 0.6rem; /* تقليل حجم النص */
+    font-size: 0.6rem; 
   }
 }
 
-/* استجابة للشاشات الأصغر (الموبايلات) */
 @media (max-width: 480px) {
   .leaflet-map {
-    height: 350px; /* تقليل ارتفاع الخريطة أكثر */
+    height: 350px;
   }
 
   .info-footer {
     padding: 8px;
-    gap: 2px; /* تقليل المسافات بين العناصر */
+    gap: 2px; 
   }
 
   .info-footer div {
-    min-width: 100%; /* تأخذ العناصر العرض الكامل */
+    min-width: 100%; 
     text-align: center;
   }
 

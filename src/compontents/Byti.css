@@ -101,18 +101,18 @@
 }
 
 .event-title3 {
-  font-size: 1.2rem; 
+  font-size: 1rem; 
   margin-bottom: 8px;
 }
 
 .event-subtitle {
-  font-size: 1.5rem; 
+  font-size: 1.3rem; 
   margin: 15px 0;
 }
 
 .timer-display {
-  flex-direction: column; 
-  gap: 10px;
+  flex-direction:row; 
+  gap: 5px;
 }
 
 .time-segment {
@@ -121,11 +121,11 @@
 }
 
 .time-segment span {
-  font-size: 1.5rem; 
+  font-size: 1.3rem; 
 }
 
 .time-segment p {
-  font-size: 0.9rem; 
+  font-size: 0.8rem; 
   margin-right: 0; 
   margin-top: 5px;
 }
@@ -147,8 +147,8 @@
 @media (max-width: 480px) {
 .timer-containert {
   padding: 20px;
-  margin-bottom:70px;
-  margin-top:-130px;
+  margin-bottom:100px;
+  margin-top:-180px;
 }
 
 .event-title3 {
@@ -156,12 +156,12 @@
 }
 
 .event-subtitle {
-  font-size: 1.2rem; 
+  font-size: 1rem; 
   margin: 10px 0;
 }
 
 .timer-display {
-  gap: 5px;
+  gap:4px;
 }
 
 .time-segment {
@@ -170,29 +170,31 @@
 }
 
 .time-segment span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .time-segment p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   transform: translateX(-25px);
 }
 
 .event-details {
   margin: 10px; 
-  font-size: 0.9rem; 
+  font-size: 0.8rem; 
+  margin-right:20px;
 }
 
 .action-buttons {
-  gap: 15px;
+  gap: 10px;
   margin-top: 10px;
 }
 
 .event-details-btn,
 .event-ticket-btn {
   width: 40%;
-  font-size: 0.9rem; 
+  font-size: 0.8rem; 
   padding: 8px;
   transform: translateX(130px);
 }
+
 }
