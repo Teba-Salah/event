@@ -78,6 +78,7 @@
 @media (max-width: 768px) {
   .unique-contact-form {
     padding: 25px; 
+    margin-top:80px;
   }
 
   .unique-form-row {
@@ -87,12 +88,12 @@
 
   .unique-form-row input,
   .unique-form-row textarea {
-    width: 97%; 
-    font-size: 12px; /* تصغير حجم الخط قليلاً */
+    width: 95%; 
+    font-size: 12px; 
   }
 
   .unique-contact-textarea {
-    height: 120px; /* تقليل ارتفاع مربع النص */
+    height: 120px; 
   }
 
   .unique-button {
@@ -118,19 +119,19 @@
   }
 
   .unique-contact-textarea {
-    height: 100px; /* تقليل ارتفاع مربع النص */
+    height: 100px; 
   }
 
   .unique-button {
-    font-size: 12px; /* تصغير حجم النص أكثر */
-    padding: 5px; /* تقليل الهوامش قليلاً */
+    font-size: 12px; 
+    padding: 5px; 
     margin-left:120px;
     max-width:80px ;
     justify-content: center;
   }
 
   .status-message {
-    font-size: 0.8rem; /* تصغير حجم رسالة الحالة */
+    font-size: 0.8rem; 
   }
 }
 

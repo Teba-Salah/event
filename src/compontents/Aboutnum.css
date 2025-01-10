@@ -30,17 +30,48 @@
   }
   
   @media (max-width: 768px) {
+    
     .EventStatistics {
-      flex-direction: column;
-      align-items: center;
+      display: flex;
+      justify-content: space-between;
+     margin-top:70px;
+      padding: 0px;
+      color: white;
+      flex-wrap: wrap;
+      gap:0px;
+     
     }
-  
     .SingleStat h3 {
-      font-size: 24px;
+      font-size: 16px;
     }
   
     .SingleStat p {
-      font-size: 12px;
+      font-size: 3px;
     }
+
+    .EventStatistics {
+      display: flex;
+      justify-content: space-between;
+      margin-top:70px; 
+      margin-bottom:40px;
+      padding: 10px; 
+      color: white;
+      flex-wrap: wrap;
+      gap: 5px;
   }
-  
+
+  .SingleStat h3 {
+      font-size: 16px; 
+      margin: 5px 0; 
+  }
+
+  .SingleStat p {
+      font-size: 12px;
+      margin: 5px 0; 
+      margin-left:20px;
+  }
+  .SingleStat {
+    flex-basis: calc(25% - 10px); /* عرض نسبي مع مسافة أقل */
+}
+
+  }
