@@ -58,7 +58,7 @@ button:hover {
   .form-row {
     flex-direction: column;
   }
-  .contact-sectiond {max-height:30vh;}
+  .contact-sectiond {max-height:45vh;}
   .form-row input,
   .form-row textarea {
     margin: 5px 0;
