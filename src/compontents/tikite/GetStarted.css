@@ -153,7 +153,7 @@ input[type="password"]
     padding: 20px; 
     margin-top: 50px;
     width: 350px;
-    height:450px;
+    height:470px;
   }
 
   .submit-button {
@@ -196,11 +196,8 @@ input[type="time"]::placeholder
 font-size:0.8rem;
 }
 
-.submit-button{
-height:25px;
-text-align: center;
-margin-top:0px;
-width:70px;
-}
+
+.submit-button {max-width:70px;}
+
 .background-image{max-height:40vh;}
 }

@@ -36,14 +36,17 @@ const EventDetail = () => {
     <div style={styles.container}>
       {/* Header */}
       <header style={styles.header}>
-        <h1 style={styles.logo}>EVENTIFY</h1>
+        <h2 style={styles.logo}>EVENTIFY</h2 >
         
       </header>
 
       {/* Main Content */}
+     
       <main style={styles.mainContent}>
+     
         {/* Event Info Section */}
-        <div style={{ ...styles.eventInfo, backgroundImage: `url(${event.image})` }}>
+        <div style={{ ...styles.eventInfo, backgroundImage: `url(${event.image})` }} >
+        
           <button style={styles.backButton} onClick={() =>Navigate(-1)}>← BACK</button>
           <h2 className='hh222' style={styles.eventTitle}>Digital Marketing Conference</h2>
           <p style={styles.eventDescription} className="color" >
@@ -53,6 +56,7 @@ const EventDetail = () => {
 
         {/* Content Container */}
         <div style={styles.contentContainer}>
+         
           {/* About Event Section */}
           <div style={styles.aboutEvent}>
             <h3 style={styles.sectionTitle}>About Event</h3>

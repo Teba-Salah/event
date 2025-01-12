@@ -318,7 +318,8 @@ background-color: #af621b00;}
   .sidebarrr {
     width: 97%; 
     margin-bottom: 20px; 
-    padding: 10px; 
+    padding: 15px; 
+    margin-left:10px;
   }
 
   .contentblogs {
@@ -337,20 +338,20 @@ background-color: #af621b00;}
   }
 
   .postblogs {
-    padding: 15px; /* تقليل الحشوات */
+    padding: 15px; 
     margin-top: 10px;
   }
 
   .post-titleblogs,
   .post-authorblogs,
   .post-dateblogs {
-    font-size: 14px; /* تصغير الخط */
-    padding: 3px 0; /* تقليل التباعد */
+    font-size: 14px;
+    padding: 3px 0; 
   }
 
   .pagination {
-    flex-wrap: wrap; /* السماح بانتقال الأزرار إلى الصف التالي */
-    gap: 10px; /* تقليل المسافات بين الأزرار */
+    flex-wrap: wrap; 
+    gap: 10px; 
   }
 
   .pagination-number,
@@ -377,10 +378,7 @@ background-color: #af621b00;}
     padding: 5px; 
   }
 
-  .sidebarrr {
-    padding: 5px;
-  }
-
+  
   .post-gridblogs {
     grid-template-columns: 1fr; 
     gap: 10px; 
@@ -412,8 +410,9 @@ background-color: #af621b00;}
   .h2blogshh,
   .h2blogs,
   .pop {
-    font-size: 14px; 
+    font-size: 16px; 
   }
+ 
 }
 
 

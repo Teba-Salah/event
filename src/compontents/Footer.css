@@ -124,30 +124,35 @@ max-width:400px;}
 
   .footer-section {
     width: 100%;
-    text-align: left;  /* تغيير المحاذاة إلى اليسار */
+    text-align: left;  
     padding: 6px;
-    margin-left: 10px;  /* إضافة هامش يسار مشابه لـ .footerpp */
+    margin-left: 10px;  
+    font-size:0.9em;
   }
 
   .footer-section h4 {
     padding-left: 0;
     padding: 6px;
-    margin-left: 10px;  /* إضافة هامش يسار مشابه لـ .footerpp */
+    margin-left: 10px; 
+    font-size:0.9em; 
   }
 
   .footer-section ul {
     padding: 6px;
-    margin-left: 10px;  /* إضافة هامش يسار مشابه لـ .footerpp */
+    margin-left: 10px;  
+    font-size:0.7em;
   }
 
   .footer-section input, 
   .footer-section button {
-    width: 80%;
+    width: 70%;
     margin: 6px 0;
+    font-size:0.8em;
   }
 
   .footer-bottom {
     text-align: center;
+    font-size:0.8em;
   }
 
   .footerpp {
@@ -157,7 +162,7 @@ max-width:400px;}
   }
 
   .foo {
-    max-width: 130px;
+    max-width: 100px;
     transform: translateX(10px);
   }
 }

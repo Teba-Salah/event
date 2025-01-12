@@ -52,7 +52,7 @@ const FormPage = () => {
       handleInputChange(e); 
     }
   }}
-  min="1" // الحد الأدنى للتذاكر 1
+  min="1" 
   required
 />
 

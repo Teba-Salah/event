@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const TicketCard = ({ price, perks, tier }) => {
   return (
     <div className="ticket-card">
-      <h2>{tier} Package</h2>
-      <h3>${price}</h3>
+      <h2 className='h2ticket'>{tier} Package</h2>
+      <h3 className='priceh3'>${price}</h3>
       <ul>
         {perks.map((perk, index) => (
           <li key={index}>{perk}</li>
