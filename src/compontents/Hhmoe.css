@@ -222,7 +222,7 @@ html {
 
 @media (max-width: 932px) {
   .start {
-    max-height:47vh;
+    max-height:52vh;
     padding: 0; 
     background-size: 100% 100%;
   }
@@ -341,7 +341,7 @@ font-size: 18px !important;}
     z-index: 1;
     font-size: 12px;
     text-align: left;
-    height:25px;
+    height:32px;
   }
   
   .about-image {
