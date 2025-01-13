@@ -127,7 +127,7 @@
     }
   
     .arrow {
-      top: 40%; 
+      top: 50%; 
     }
   
     .next {
@@ -147,7 +147,7 @@
     }
     .video-slide {
       width: 80%; 
-      height: 400px; 
+      height: 250px; 
       margin: 0 auto;
     }
   }

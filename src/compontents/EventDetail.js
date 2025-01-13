@@ -141,7 +141,7 @@ const EventDetail = () => {
 // Inline Styles
 const styles = {
   container: {
-    backgroundColor: '#0b132b',
+    backgroundColor: '#0B182B',
     color: 'white',
     fontFamily: 'Arial, sans-serif',
     display: 'flex',
@@ -160,19 +160,13 @@ const styles = {
   logo: {
     fontSize: '24px',
     fontWeight: 'bold',
+    
   },
   headerIcons: {
     display: 'flex',
     alignItems: 'center',
   },
-  searchInput: {
-    padding: '5px',
-    marginRight: '10px',
-    borderRadius: '5px',
-    border: '1px solid #1e2a47',
-    color: '#ffffff',
-    backgroundColor: '#1e2a47',
-  },
+
   contactButton: {
     backgroundColor: '#AF621B',
     color: 'white',
@@ -196,7 +190,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
+    backgroundColor: 'rgba(11, 24, 43, 0.44)', 
   },
+
   backButton: {
     backgroundColor: 'transparent',
     color: 'white',
