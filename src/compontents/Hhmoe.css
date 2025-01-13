@@ -298,7 +298,7 @@ h1 {
   max-width: 700px;
   font-size: 0.6rem !important;
   margin-left: 50px;
-  margin-top:-10px;
+  margin-top:0px;
  
 }
 
@@ -307,7 +307,7 @@ h1 {
   margin: 0;
   padding: 0;
   margin-left: 50px;
-  margin-top:-30px;
+  margin-top:0px;
 }
 
 .hh2 {
@@ -326,22 +326,22 @@ font-size: 18px !important;}
     margin-left:9px;
     text-align: left;
     font-size: 12px !important;
-    margin-top:-25px;
+   
   
   }
   .hero-content h1 {
     margin-bottom: 5px; 
   }
-  .see-more{margin-top:-30px !important; }
+  
 
   .get-started {
     position: absolute;
-    top: 230px; 
+    top: 220px; 
     left: 0px; 
     z-index: 1;
     font-size: 12px;
     text-align: left;
-    height:30px;
+    height:25px;
   }
   
   .about-image {
