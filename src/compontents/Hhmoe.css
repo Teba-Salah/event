@@ -240,7 +240,8 @@ html {
     color: white; 
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin-top:-10px;
+    margin-top:-20px;
+    margin-left:40px;
   }
   
   .hero-content .see-more:hover {
@@ -278,7 +279,7 @@ html {
 .about-image{margin: 0;
   padding: 0;
   margin-top: -140px;
-  margin-bottom: 700px;
+  margin-bottom: 610px;
   margin-left: -170px;
   width: 450px;
   height: 400px;
@@ -288,15 +289,15 @@ html {
 h1 {
   font-size: 20px !important;
   max-width: 700px;
-  margin-top: 100px;
-  margin-left:40px;
+  margin-top: 70px;
+  margin-left:50px;
 }
 
 .pl {
   text-align: left;
   max-width: 700px;
   font-size: 0.6rem !important;
-  margin-left: 40px;
+  margin-left: 50px;
   margin-top:-10px;
  
 }
@@ -305,8 +306,8 @@ h1 {
   font-size: 0.6rem !important; 
   margin: 0;
   padding: 0;
-  margin-left: 40px;
-  margin-top:-20px;
+  margin-left: 50px;
+  margin-top:-30px;
 }
 
 .hh2 {
@@ -329,28 +330,27 @@ font-size: 18px !important;}
   
   }
   .hero-content h1 {
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
   }
   .see-more{margin-top:-30px !important; }
+
+
+ 
   .get-started {
-    margin-left: 9px;
-    text-align: left;
-    font-size: 12px;
-    margin-top: -25px; /* Adjust if necessary */
+    position: absolute;
+    top: 230px; 
+    left: 0px; 
     z-index: 1;
-    position: relative; /* Ensure z-index works */
+    font-size: 12px;
+    text-align: left;
+   
   }
   
   .about-image {
-    margin: 0;
-    padding: 0;
-    margin-top: -140px; /* Adjust if necessary */
-    margin-bottom: 700px; /* Adjust if necessary */
-    margin-left: -170px; /* Adjust if necessary */
+    position: relative;
+    z-index: 2;
     width: 450px;
-    height: 200px; /* Use either height or max-height */
-    z-index: 2; /* Corrected syntax */
-    position: relative; /* Ensure z-index works */
+    height: 450px;
   }
-  
+
 }
